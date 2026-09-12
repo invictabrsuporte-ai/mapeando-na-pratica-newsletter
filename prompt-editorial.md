@@ -18,7 +18,7 @@ A newsletter é destinada principalmente a gestores, coordenadores, analistas, c
 - Número da edição: [NÚMERO]
 - Tema principal, se houver: [TEMA OU "LIVRE"]
 - Oferta ou CTA comercial opcional: [OFERTA/LINK OU "SEM OFERTA"]
-- Link para inscrição/compartilhamento: [LINK]
+- Link para inscrição/compartilhamento: https://tally.so/r/BzrB91
 - Região das vagas: [BRASIL / REMOTO / ESTADO OU CIDADE]
 - Quantidade de vagas: [5 A 10]
 
@@ -169,7 +169,7 @@ Tabela: Cargo | Empresa | Local/Modalidade | Publicada em | Link. Rodapé: "As v
 
 **L. Pergunta do leitor** — pergunta ligada aos desafios reais do público, convite para responder ao e-mail, aviso de que a resposta pode aparecer anonimamente na próxima edição.
 
-**M. Fechamento e CTA** — fechamento curto e humano: convite a responder, encaminhar, seguir @mapeandonapratica. Se houver oferta, um único bloco comercial curto após todo o conteúdo, ligado ao problema abordado, com o link fornecido. Se "SEM OFERTA", não criar promoção.
+**M. Fechamento e CTA** — fechamento curto e humano: convite a responder, encaminhar, seguir @mapeandonapratica, e se inscrever usando o link de inscrição/compartilhamento informado na seção 1 (ex: "Recebeu de repasse? Assine aqui: [LINK]"). Se houver oferta, um único bloco comercial curto após todo o conteúdo, ligado ao problema abordado, com o link fornecido. Se "SEM OFERTA", não criar promoção.
 
 **N. Auditoria final** — seção separada "CHECKLIST DO EDITOR" (não publicável):
 - Todas as notícias estão dentro do período solicitado ou foram sinalizadas como contexto.
