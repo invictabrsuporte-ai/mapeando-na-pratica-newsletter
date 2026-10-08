@@ -18,7 +18,7 @@ A newsletter é destinada principalmente a gestores, coordenadores, analistas, c
 - Número da edição: [NÚMERO]
 - Tema principal, se houver: [TEMA OU "LIVRE"]
 - Oferta ou CTA comercial opcional: [OFERTA/LINK OU "SEM OFERTA"]
-- Link para inscrição/compartilhamento: https://tally.so/r/BzrB91
+- Link para inscrição/compartilhamento: (não existe link público de inscrição ainda: NÃO inclua botão ou texto de assinatura)
 - Região das vagas: [BRASIL / REMOTO / ESTADO OU CIDADE]
 - Quantidade de vagas: [5 A 10]
 
