@@ -230,3 +230,10 @@ open(BASE + '-email.html', 'w', encoding='utf-8').write(build(False))
 open(BASE + '.html', 'w', encoding='utf-8').write(build(True))
 em = open(BASE + '-email.html', encoding='utf-8').read()
 print('email bytes', len(em.encode('utf-8')), '| img', em.count('<img'), '| style-tag', em.count('<style'), '| bg-image', em.count('background-image'), '| script', em.count('<script'), '| vagas', len(vagas), '| capas', len(IMGS))
+
+# deixa as capas (img/) e os demais arquivos prontos para o commit da rotina
+import subprocess
+try:
+    subprocess.run(['git', 'add', '-A'], check=False, capture_output=True)
+except Exception:
+    pass
