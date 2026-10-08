@@ -1,2 +1,0 @@
-Envio aos inscritos liberado por Alan Almeida em 08/10/2026.
-Para pausar o envio automatico, apague este arquivo (a rotina volta a mandar so a previa ao editor).

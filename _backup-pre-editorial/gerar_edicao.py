@@ -98,7 +98,7 @@ def capas():
     make('banner-modelagem', 'PUBLI · CURSO', 'Domine a modelagem de processos com BPMN', ORANGE)
     make('banner-gratuitos', 'CURSOS GRATUITOS', 'Aprenda sem pagar: 4 trilhas para sua semana', '#2563EB')
     return made
-IMGS = {}  # a versão web editorial gera as próprias ilustrações (editorial_web.py)
+IMGS = capas() if '--sem-imagens' not in sys.argv else {}
 
 # ---------------------- Markdown ----------------------
 md = []
@@ -143,13 +143,12 @@ def cover(name, web, alt):
     if web and name in IMGS: return f'<img src="{IMGS[name]}" alt="{e(alt)}" width="544" style="display:block; width:100%; max-width:544px; border-radius:10px; margin:0 0 16px 0;" />'
     return ''
 
-def build(web=False, brevo=False):
-    web = web or brevo
+def build(web=False):
     rows = []
     # barra superior
     rows.append(f'<tr><td align="right" style="padding:0 4px 10px 0; {SANS} font-size:12px; color:{MUT};">{e(DATE_PT)} &nbsp;|&nbsp; <a href="{WEB_URL}" style="color:{INK}; font-weight:bold;">Leia online</a></td></tr>')
     if web:
-        rows.append(f'<tr><td style="padding:0 0 16px 0;"><img src="{PAGES if brevo else ""}header-banner.jpg" alt="Mapeando na Prática" width="600" style="display:block; width:100%; max-width:600px; border-radius:12px;" /></td></tr>')
+        rows.append('<tr><td style="padding:0 0 16px 0;"><img src="header-banner.jpg" alt="Mapeando na Prática" width="600" style="display:block; width:100%; max-width:600px; border-radius:12px;" /></td></tr>')
     else:
         rows.append(f'<tr><td style="padding:0 0 16px 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:{NAVY}; border-radius:12px;"><tr><td align="center" style="padding:34px 20px 8px 20px;"><div style="{SANS} font-size:30px; font-weight:bold; letter-spacing:1px; color:#FFFFFF;">MAPEANDO NA PRÁTICA</div><div style="{SANS} font-size:15px; color:{ORANGE}; margin-top:8px;">A dose de processos do seu dia.</div></td></tr><tr><td align="center" style="padding:6px 20px 28px 20px;"><div style="{SANS} font-size:12px; letter-spacing:2px; color:#CBD5E1; margin-top:12px;">EDIÇÃO #{int(N)} · {e(DATE_ISO[8:])}/{e(DATE_ISO[5:7])}/{e(DATE_ISO[:4])} · <a href="{SITE}" style="color:#CBD5E1; text-decoration:none;">MAPEANDONAPRATICA.COM</a></div></td></tr></table></td></tr>')
     # saudação + sumário
@@ -218,7 +217,7 @@ def build(web=False, brevo=False):
     def badge(url, txt, bg):
         return f'<td style="padding:0 6px 0 0;"><a href="{url}" style="display:inline-block; background-color:{bg}; color:#FFFFFF; {SANS} font-size:13px; font-weight:bold; text-decoration:none; padding:9px 14px; border-radius:8px;">{txt}</a></td>'
     icones = f'<table role="presentation" cellpadding="0" cellspacing="0" align="center"><tr>{badge(SITE, "🌐 Invicta", NAVY)}{badge(LINKEDIN, "in LinkedIn", "#0A66C2")}{badge(INSTAGRAM, "◎ Instagram", "#C13584")}</tr></table>'
-    unsub = '{{ unsubscribe }}' if brevo else 'mailto:invictabrsuporte@gmail.com?subject=' + urllib.parse.quote('Descadastrar newsletter') + '&body=' + urllib.parse.quote('Quero deixar de receber a newsletter Mapeando na Prática.')
+    unsub = 'mailto:invictabrsuporte@gmail.com?subject=' + urllib.parse.quote('Descadastrar newsletter') + '&body=' + urllib.parse.quote('Quero deixar de receber a newsletter Mapeando na Prática.')
     rows.append(f'<tr><td align="center" style="padding:8px 20px 8px 20px; {SANS} font-size:13px; line-height:1.6; color:{MUT};">{icones}</td></tr>')
     rows.append(f'<tr><td align="center" style="padding:14px 20px 4px 20px; {SANS} font-size:14px; line-height:1.6; color:{INK};">Quer fazer sua marca conversar com gestores, analistas e consultores de processos? <a href="{ANUNCIE}" style="color:{ORANGE}; font-weight:bold; text-decoration:underline;">Anuncie</a>.</td></tr>')
     rows.append(f'<tr><td align="center" style="padding:10px 20px 28px 20px; {SANS} font-size:12px; line-height:1.6; color:{MUT};">Você recebe este e-mail porque pediu a newsletter Mapeando na Prática ao preencher o formulário do bônus da aula. <a href="{unsub}" style="color:{MUT}; text-decoration:underline;">Descadastrar</a> · Invicta Consultoria · @mapeandonapratica</td></tr>')
@@ -228,20 +227,9 @@ def build(web=False, brevo=False):
             f'<table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" style="width:600px; max-width:600px;">\n' + '\n'.join(rows) + '\n</table>\n</td>\n</tr>\n</table>\n</div>\n')
 
 open(BASE + '-email.html', 'w', encoding='utf-8').write(build(False))
-# versão para Brevo: e-mail COM imagens (URLs absolutas no GitHub Pages) e descadastro do Brevo
-import editorial_web as _ew
-_figs = _ew.ilustracoes(news, N)
-IMGS = {f'capa-{N}-{i+1}': PAGES + f.replace('.webp', '.png') for i, (f, _) in _figs.items()}
-IMGS.update({'banner-modelagem': PAGES + 'img/banner-modelagem.png', 'banner-gratuitos': PAGES + 'img/banner-gratuitos.png'})
-open(BASE + '-brevo.html', 'w', encoding='utf-8').write(build(brevo=True))
-IMGS = {}
-import editorial_web
-open(BASE + '.html', 'w', encoding='utf-8').write(editorial_web.build_web(dict(
-    N=N, DATE_PT=DATE_PT, DATE_ISO=DATE_ISO, BASE=BASE, WEB_URL=WEB_URL, news=news, radar=radar, abertura=abertura, aplique=aplique, pausa=pausa,
-    ferramenta=ferramenta, salvar=salvar, pergunta=pergunta, fechamento=fechamento, vagas=vagas, AD=AD, GRATUITOS=GRATUITOS, SUGESTAO=SUGESTAO,
-    ANUNCIE=ANUNCIE, SITE=SITE, LINKEDIN=LINKEDIN, INSTAGRAM=INSTAGRAM, CLAUDECODE=CLAUDECODE, mailto=mailto, C=C, preheaders=preheaders)))
+open(BASE + '.html', 'w', encoding='utf-8').write(build(True))
 em = open(BASE + '-email.html', encoding='utf-8').read()
-print('email bytes', len(em.encode('utf-8')), '| img', em.count('<img'), '| style-tag', em.count('<style'), '| bg-image', em.count('background-image'), '| script', em.count('<script'), '| vagas', len(vagas), '| web editorial ok')
+print('email bytes', len(em.encode('utf-8')), '| img', em.count('<img'), '| style-tag', em.count('<style'), '| bg-image', em.count('background-image'), '| script', em.count('<script'), '| vagas', len(vagas), '| capas', len(IMGS))
 
 # deixa as capas (img/) e os demais arquivos prontos para o commit da rotina
 import subprocess

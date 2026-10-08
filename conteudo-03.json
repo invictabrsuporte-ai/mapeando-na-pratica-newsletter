@@ -1,166 +1,171 @@
 {
- "subjects": [
-  "A IA barata que faz o trabalho repetitivo",
-  "Quem faz o trabalho de volume no seu processo?",
-  "12 vagas em processos abertas esta semana"
- ],
- "preheaders": [
-  "Haiku 5.5, ProcessOS e Power Platform: 3 sinais para 2026 + 12 vagas abertas",
-  "Separe volume de julgamento antes de ligar a IA no processo"
- ],
- "SUBJECT_SEND": "12 vagas em processos abertas esta semana",
- "abertura": "Em qualquer processo bem desenhado, quem faz o quê não é acaso: o especialista cuida da exceção, o operador treinado cuida do volume. Ninguém coloca a engenheira sênior para conferir cadastro às 8h da manhã. Com IA, o mesmo erro aparece de forma mais silenciosa: usamos o modelo mais caro e mais lento para classificar e-mail, resumir ata ou separar pedido. Esta semana a Anthropic lançou um modelo pensado justamente para o trabalho de volume, e isso reabre uma conta que quase ninguém faz: qual tarefa do seu processo merece qual recurso? Também nesta edição: a Camunda fala em ciclo de vida completo do processo, a Microsoft lembra que ninguém começa IA do zero, e você encontra 12 vagas abertas em processos e melhoria contínua, publicadas entre 1 e 8 de outubro.",
- "news": [
-  {
-   "h": "A IA pequena que assume o trabalho repetitivo do seu processo 🧩",
-   "date": "7 de outubro de 2026",
-   "src": "Anthropic",
-   "url": "https://www.anthropic.com/claude-haiku-5-5",
-   "p": [
-    "Em 7 de outubro, a Anthropic lançou o Claude Haiku 5.5, que a própria empresa descreve como o modelo pequeno mais barato, mais rápido e mais capaz que já lançou. Ele foi desenhado para tarefas de alto volume e sensíveis a custo: resumos, consultas a banco de dados e classificação de solicitações. A Anthropic também o indica para atendimento ao vivo e uso de navegador, onde a velocidade pesa, e como subagente ao lado do Opus 5.5 e do Sonnet 5.5 em trabalho de código.",
-    "Segundo a Anthropic, ele custa em média cerca de 75% menos que o Haiku 4.5, o modelo pequeno anterior.",
-    "**Por que importa para processos:** a pergunta de gestão deixa de ser \"qual IA usar?\" e passa a ser \"qual tarefa vai para qual recurso?\". Triagem, classificação e resumo são tarefas de volume e regra. Exceção, decisão e comunicação sensível seguem pedindo mais capacidade e revisão humana. Antes de trocar qualquer modelo, meça: taxa de erro em uma amostra e custo por solicitação."
-   ],
-   "tag": "IA",
-   "tldr": "A Anthropic lançou o Claude Haiku 5.5, modelo pequeno feito para trabalho de volume e, segundo a empresa, cerca de 75% mais barato que o anterior.",
-   "curto": "o modelo pequeno que assume o trabalho de volume",
-   "capa": "IA pequena para o trabalho de volume"
+  "subjects": [
+    "A IA barata que faz o trabalho repetitivo",
+    "Quem faz o trabalho de volume no seu processo?",
+    "12 vagas em processos abertas esta semana"
+  ],
+  "preheaders": [
+    "Haiku 5.5, ProcessOS e Power Platform: 3 sinais para 2026 + 12 vagas abertas",
+    "Separe volume de julgamento antes de ligar a IA no processo"
+  ],
+  "SUBJECT_SEND": "12 vagas em processos abertas esta semana",
+  "abertura": "Em qualquer processo bem desenhado, quem faz o quê não é acaso: o especialista cuida da exceção, o operador treinado cuida do volume. Ninguém coloca a engenheira sênior para conferir cadastro às 8h da manhã. Com IA, o mesmo erro aparece de forma mais silenciosa: usamos o modelo mais caro e mais lento para classificar e-mail, resumir ata ou separar pedido. Esta semana a Anthropic lançou um modelo pensado justamente para o trabalho de volume, e isso reabre uma conta que quase ninguém faz: qual tarefa do seu processo merece qual recurso? Também nesta edição: a Camunda fala em ciclo de vida completo do processo, a Microsoft lembra que ninguém começa IA do zero, e você encontra 12 vagas abertas em processos e melhoria contínua, publicadas entre 1 e 8 de outubro.",
+  "news": [
+    {
+      "h": "A IA pequena que assume o trabalho repetitivo do seu processo 🧩",
+      "date": "7 de outubro de 2026",
+      "src": "Anthropic",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "p": [
+        "Em 7 de outubro, a Anthropic lançou o Claude Haiku 5.5, que a própria empresa descreve como o modelo pequeno mais barato, mais rápido e mais capaz que já lançou. Ele foi desenhado para tarefas de alto volume e sensíveis a custo: resumos, consultas a banco de dados e classificação de solicitações. A Anthropic também o indica para atendimento ao vivo e uso de navegador, onde a velocidade pesa, e como subagente ao lado do Opus 5.5 e do Sonnet 5.5 em trabalho de código.",
+        "Segundo a Anthropic, ele custa em média cerca de 75% menos que o Haiku 4.5, o modelo pequeno anterior.",
+        "**Por que importa para processos:** a pergunta de gestão deixa de ser \"qual IA usar?\" e passa a ser \"qual tarefa vai para qual recurso?\". Triagem, classificação e resumo são tarefas de volume e regra. Exceção, decisão e comunicação sensível seguem pedindo mais capacidade e revisão humana. Antes de trocar qualquer modelo, meça: taxa de erro em uma amostra e custo por solicitação."
+      ],
+      "tag": "IA",
+      "tldr": "A Anthropic lançou o Claude Haiku 5.5, modelo pequeno feito para trabalho de volume e, segundo a empresa, cerca de 75% mais barato que o anterior.",
+      "curto": "o modelo pequeno que assume o trabalho de volume",
+      "capa": "IA pequena para o trabalho de volume",
+      "ilustracao": "lanes"
+    },
+    {
+      "h": "A Camunda diz que processo é um ciclo: entender, automatizar, melhorar 🔁",
+      "date": "6 de outubro de 2026",
+      "src": "Camunda",
+      "url": "https://camunda.com/blog/2026/10/building-the-processos-partner-ecosystem/",
+      "p": [
+        "Em post de 6 de outubro, a Camunda defende o que chama de ProcessOS: um sistema que apoia o ciclo de vida completo de um processo, ou seja, entende o trabalho, o automatiza e continua melhorando conforme as condições mudam. O texto trata do ecossistema de parceiros e diz que entregar essa visão em escala exige colaboração com cada cliente, e que os parceiros trazem experiência especializada.",
+        "**Leitura crítica:** é conteúdo de um fornecedor de software, então vale ler como direção de mercado, não como fato validado. Ainda assim, o desenho é familiar: entender o processo (AS IS), redesenhar e automatizar (TO BE), medir e melhorar (KPI e rotina). O que o texto reforça é que a primeira etapa, entender o trabalho, continua dependendo de gente com conhecimento específico do negócio.",
+        "**Para aplicar:** se a sua automação nasceu sem um mapeamento, o ciclo está começando pelo meio."
+      ],
+      "tag": "BPM",
+      "tldr": "A Camunda defende que processo é um ciclo: entender o trabalho, automatizar e continuar melhorando.",
+      "curto": "processo como ciclo: entender, automatizar, melhorar",
+      "capa": "Processo é um ciclo: entender, automatizar, melhorar",
+      "ilustracao": "ciclo"
+    },
+    {
+      "h": "Sua transformação com IA começa pelo que você já construiu 🧱",
+      "date": "1 de outubro de 2026",
+      "src": "Microsoft Power Platform Blog",
+      "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/your-ai-transformation-starts-with-what-youve-already-built/",
+      "p": [
+        "Em 1º de outubro, Tiffany Treacy, vice-presidente de produto do Power Platform, publicou que a próxima geração de aplicações de negócio vai juntar pessoas, agentes, apps e automações para entender objetivos, decidir e agir. O ponto central do texto, ligado à conferência PPCC 2026, é que a maioria das organizações não começa a transformação com IA do zero: já tem aplicações, dados, automações e processos dos quais as pessoas dependem todos os dias, e a oportunidade é construir sobre isso.",
+        "**Por que importa:** antes de acrescentar um agente, vale saber o que já existe. Quais planilhas, fluxos e sistemas sustentam o processo hoje? Quem depende deles? Esse inventário é a primeira entrega de um bom levantamento AS IS, e evita automatizar por cima de um fluxo que ninguém enxerga inteiro.",
+        "Fonte de fornecedor: leia como visão de mercado. A Microsoft também abriu inscrições para o Ignite, de 17 a 20 de novembro."
+      ],
+      "tag": "AUTOMAÇÃO",
+      "tldr": "A Microsoft lembra que a maioria das empresas não começa a transformação com IA do zero.",
+      "curto": "comece a IA pelo que você já construiu",
+      "capa": "Comece a IA pelo que você já construiu",
+      "ilustracao": "camadas"
+    }
+  ],
+  "radar": [
+    [
+      "IA",
+      "em 6 de outubro, a Anthropic anunciou uma versão ampliada do Cyber Verification Program, que oferece capacidades avançadas de segurança, com menos bloqueios automáticos, a profissionais de segurança qualificados.",
+      "https://www.anthropic.com/news/cyber-verification-program"
+    ],
+    [
+      "Lean",
+      "o Lean Enterprise Institute abre em 6 de novembro o curso online, conduzido por coach, \"Managing on Purpose with Hoshin Kanri\", sobre desdobramento de metas.",
+      "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/"
+    ],
+    [
+      "Lean administrativo",
+      "a simulação \"InBox Lean Office Kaizen\" acontece em 28 de outubro, em Rochester (EUA), com foco em Lean aplicado a trabalho de escritório.",
+      "https://www.lean.org/events-training/events/inbox-lean-office-kaizen-simulation/"
+    ],
+    [
+      "Eventos",
+      "o 2027 Lean Summit está marcado para 16 e 17 de março de 2027.",
+      "https://www.lean.org/summit"
+    ],
+    [
+      "Tecnologia",
+      "o Microsoft Ignite 2026 acontece de 17 a 20 de novembro, com inscrições abertas.",
+      "https://www.microsoft.com/en-us/power-platform/blog/"
+    ]
+  ],
+  "aplique": {
+    "title": "Separe o volume do julgamento",
+    "problema": "a equipe usa (ou quer usar) IA em tudo, sem distinguir o que é repetitivo e baseado em regra do que exige decisão humana.",
+    "passos": [
+      "Liste 5 tarefas do seu processo que se repetem toda semana (ex.: classificar solicitações, resumir atendimentos, conferir cadastro, responder dúvidas comuns, separar documentos).",
+      "Marque cada uma como \"volume e regra\" (sempre igual, critério claro) ou \"exceção e julgamento\" (depende de contexto, risco ou relacionamento).",
+      "Escolha UMA tarefa de volume e rode um piloto de uma semana sobre 30 itens: compare o resultado da IA com a classificação de uma pessoa e registre a taxa de acerto e o tempo gasto.",
+      "Defina o checkpoint humano: quem revisa uma amostra, com que frequência e o que acontece quando o erro passa de um limite combinado."
+    ],
+    "ferramenta": "planilha com 5 colunas: Tarefa / Volume por semana / Tipo (volume ou julgamento) / Taxa de acerto no piloto / Responsável pela revisão.",
+    "duracao": "40 minutos para listar e classificar; uma semana para o piloto.",
+    "resultado": "uma tarefa repetitiva sai da mão do time com critério de qualidade e responsável nomeado, e as de julgamento ficam protegidas."
   },
-  {
-   "h": "A Camunda diz que processo é um ciclo: entender, automatizar, melhorar 🔁",
-   "date": "6 de outubro de 2026",
-   "src": "Camunda",
-   "url": "https://camunda.com/blog/2026/10/building-the-processos-partner-ecosystem/",
-   "p": [
-    "Em post de 6 de outubro, a Camunda defende o que chama de ProcessOS: um sistema que apoia o ciclo de vida completo de um processo, ou seja, entende o trabalho, o automatiza e continua melhorando conforme as condições mudam. O texto trata do ecossistema de parceiros e diz que entregar essa visão em escala exige colaboração com cada cliente, e que os parceiros trazem experiência especializada.",
-    "**Leitura crítica:** é conteúdo de um fornecedor de software, então vale ler como direção de mercado, não como fato validado. Ainda assim, o desenho é familiar: entender o processo (AS IS), redesenhar e automatizar (TO BE), medir e melhorar (KPI e rotina). O que o texto reforça é que a primeira etapa, entender o trabalho, continua dependendo de gente com conhecimento específico do negócio.",
-    "**Para aplicar:** se a sua automação nasceu sem um mapeamento, o ciclo está começando pelo meio."
-   ],
-   "tag": "BPM",
-   "tldr": "A Camunda defende que processo é um ciclo: entender o trabalho, automatizar e continuar melhorando.",
-   "curto": "processo como ciclo: entender, automatizar, melhorar",
-   "capa": "Processo é um ciclo: entender, automatizar, melhorar"
+  "pausa": {
+    "cenario": "sua equipe vai usar IA para classificar cerca de 500 solicitações por semana por categoria e prioridade. O custo por item é baixo e a demonstração do fornecedor foi ótima.",
+    "pergunta": "o que você faria primeiro?",
+    "opts": [
+      [
+        "A",
+        "Ligar em todas as solicitações já na segunda e ajustar conforme os problemas aparecerem.",
+        "Ligar em todas as solicitacoes e ajustar depois"
+      ],
+      [
+        "B",
+        "Rodar em uma amostra de 30 itens, comparar com a classificação humana e só então decidir o que automatizar.",
+        "Rodar em amostra e comparar com classificacao humana"
+      ],
+      [
+        "C",
+        "Pedir ao fornecedor um documento de garantia de acerto e seguir o que ele recomendar.",
+        "Pedir garantia de acerto ao fornecedor"
+      ]
+    ],
+    "palpite": "B. Demonstração boa não é medição no seu processo. A amostra mostra a taxa real de erro nos SEUS dados e define o checkpoint humano. A é pular a medição; C terceiriza uma decisão que é sua."
   },
-  {
-   "h": "Sua transformação com IA começa pelo que você já construiu 🧱",
-   "date": "1 de outubro de 2026",
-   "src": "Microsoft Power Platform Blog",
-   "url": "https://www.microsoft.com/en-us/power-platform/blog/power-apps/your-ai-transformation-starts-with-what-youve-already-built/",
-   "p": [
-    "Em 1º de outubro, Tiffany Treacy, vice-presidente de produto do Power Platform, publicou que a próxima geração de aplicações de negócio vai juntar pessoas, agentes, apps e automações para entender objetivos, decidir e agir. O ponto central do texto, ligado à conferência PPCC 2026, é que a maioria das organizações não começa a transformação com IA do zero: já tem aplicações, dados, automações e processos dos quais as pessoas dependem todos os dias, e a oportunidade é construir sobre isso.",
-    "**Por que importa:** antes de acrescentar um agente, vale saber o que já existe. Quais planilhas, fluxos e sistemas sustentam o processo hoje? Quem depende deles? Esse inventário é a primeira entrega de um bom levantamento AS IS, e evita automatizar por cima de um fluxo que ninguém enxerga inteiro.",
-    "Fonte de fornecedor: leia como visão de mercado. A Microsoft também abriu inscrições para o Ignite, de 17 a 20 de novembro."
-   ],
-   "tag": "AUTOMAÇÃO",
-   "tldr": "A Microsoft lembra que a maioria das empresas não começa a transformação com IA do zero.",
-   "curto": "comece a IA pelo que você já construiu",
-   "capa": "Comece a IA pelo que você já construiu"
-  }
- ],
- "radar": [
-  [
-   "IA",
-   "em 6 de outubro, a Anthropic anunciou uma versão ampliada do Cyber Verification Program, que oferece capacidades avançadas de segurança, com menos bloqueios automáticos, a profissionais de segurança qualificados.",
-   "https://www.anthropic.com/news/cyber-verification-program"
+  "ferramenta": {
+    "nome": "bpmn.io (editor BPMN no navegador)",
+    "url": "https://demo.bpmn.io/",
+    "oque": "editor gratuito, que roda no navegador, para desenhar diagramas BPMN, sem instalar nada. É a mesma família de tecnologia usada por ferramentas de mercado como a Camunda.",
+    "problema": "processo desenhado em slide ou quadro solto, que só quem desenhou consegue interpretar.",
+    "uso": "mapear um processo AS IS em reunião com o time e exportar o arquivo para revisar depois.",
+    "limitacao": "só desenha e documenta: não executa nem monitora o processo, e o trabalho em equipe exige compartilhar o arquivo manualmente.",
+    "exemplo": "um analista desenha o fluxo de aprovação de compras, marca as decisões sem critério escrito e leva o diagrama para validar com quem executa."
+  },
+  "salvar": [
+    [
+      "Artigo",
+      "Introducing Claude Haiku 5.5",
+      "https://www.anthropic.com/claude-haiku-5-5",
+      "vale a leitura das seções de desempenho e preço para quem quer calcular o custo por tarefa."
+    ],
+    [
+      "Artigo",
+      "The Great Process Re-Engineering Has Begun (Camunda, maio de 2026)",
+      "https://camunda.com/blog/2026/05/the-great-process-re-engineering-has-begun/",
+      "contexto de mercado para a discussão de processo e IA desta edição, lido como visão de fornecedor."
+    ],
+    [
+      "Ferramenta gratuita",
+      "Portal de vagas da Gupy",
+      "https://portal.gupy.io/",
+      "pesquisa direta por termos como \"analista de processos\" e \"melhoria contínua\", com data de publicação em cada vaga."
+    ]
   ],
-  [
-   "Lean",
-   "o Lean Enterprise Institute abre em 6 de novembro o curso online, conduzido por coach, \"Managing on Purpose with Hoshin Kanri\", sobre desdobramento de metas.",
-   "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/"
+  "pergunta": "Qual tarefa repetitiva do seu processo ainda é feita com o recurso mais caro (ou mais lento) que você tem, só porque sempre foi assim?",
+  "fechamento": "Se algo aqui foi útil, o maior favor é responder com sua opinião ou encaminhar para alguém que vive tentando descobrir qual tarefa merece qual recurso. E se tem um tema, uma ferramenta ou um tipo de vaga que você quer ver por aqui, é só contar.",
+  "pend": [
+    "Edição gerada como **teste v1, enviada somente para almeida.alan9@gmail.com** em 08/10/2026 (quinta-feira). A edição semanal automática roda às terças.",
+    "Notícias verificadas por abertura direta dos links nas páginas oficiais (Anthropic, Camunda, Microsoft). Os itens de Lean e eventos do radar vieram da página de eventos do lean.org e do banner do blog da Microsoft, que não exibem data de publicação; são eventos futuros, não notícias datadas.",
+    "Vagas: 12 vagas do portal da Gupy, publicadas entre 01 e 08/10/2026 (data exibida no portal). Cada link foi aberto individualmente em 08/10; 11 mostraram o botão de candidatura e a vaga da Kuehne+Nagel abriu sem exibir o botão (sem aviso de encerramento). Nenhuma outra plataforma (LinkedIn, Vagas.com, Indeed) foi consultada nesta edição.",
+    "Não houve pauta datada de Lean/Six Sigma dentro dos últimos 7 dias em fontes primárias; o radar traz eventos Lean em vez de notícia.",
+    "O conector de Gmail usado no envio remove imagens do HTML. A versão de e-mail usa blocos de cor, tipografia e emoji; as capas e banners reais só aparecem na versão web (link \"Leia online\" no topo do e-mail).",
+    "A seção \"Cursos gratuitos\" lista Anthropic Academy, Camunda Academy, Escola Virtual.Gov e Microsoft Learn. Gratuidade conferida por busca (não por abertura de cada curso); cada instituição pode mudar as condições.",
+    "O link de inscrição pública da newsletter ainda não existe; por isso o rodapé não traz \"Assine aqui\"."
   ],
-  [
-   "Lean administrativo",
-   "a simulação \"InBox Lean Office Kaizen\" acontece em 28 de outubro, em Rochester (EUA), com foco em Lean aplicado a trabalho de escritório.",
-   "https://www.lean.org/events-training/events/inbox-lean-office-kaizen-simulation/"
-  ],
-  [
-   "Eventos",
-   "o 2027 Lean Summit está marcado para 16 e 17 de março de 2027.",
-   "https://www.lean.org/summit"
-  ],
-  [
-   "Tecnologia",
-   "o Microsoft Ignite 2026 acontece de 17 a 20 de novembro, com inscrições abertas.",
-   "https://www.microsoft.com/en-us/power-platform/blog/"
-  ]
- ],
- "aplique": {
-  "title": "Separe o volume do julgamento",
-  "problema": "a equipe usa (ou quer usar) IA em tudo, sem distinguir o que é repetitivo e baseado em regra do que exige decisão humana.",
-  "passos": [
-   "Liste 5 tarefas do seu processo que se repetem toda semana (ex.: classificar solicitações, resumir atendimentos, conferir cadastro, responder dúvidas comuns, separar documentos).",
-   "Marque cada uma como \"volume e regra\" (sempre igual, critério claro) ou \"exceção e julgamento\" (depende de contexto, risco ou relacionamento).",
-   "Escolha UMA tarefa de volume e rode um piloto de uma semana sobre 30 itens: compare o resultado da IA com a classificação de uma pessoa e registre a taxa de acerto e o tempo gasto.",
-   "Defina o checkpoint humano: quem revisa uma amostra, com que frequência e o que acontece quando o erro passa de um limite combinado."
-  ],
-  "ferramenta": "planilha com 5 colunas: Tarefa / Volume por semana / Tipo (volume ou julgamento) / Taxa de acerto no piloto / Responsável pela revisão.",
-  "duracao": "40 minutos para listar e classificar; uma semana para o piloto.",
-  "resultado": "uma tarefa repetitiva sai da mão do time com critério de qualidade e responsável nomeado, e as de julgamento ficam protegidas."
- },
- "pausa": {
-  "cenario": "sua equipe vai usar IA para classificar cerca de 500 solicitações por semana por categoria e prioridade. O custo por item é baixo e a demonstração do fornecedor foi ótima.",
-  "pergunta": "o que você faria primeiro?",
-  "opts": [
-   [
-    "A",
-    "Ligar em todas as solicitações já na segunda e ajustar conforme os problemas aparecerem.",
-    "Ligar em todas as solicitacoes e ajustar depois"
-   ],
-   [
-    "B",
-    "Rodar em uma amostra de 30 itens, comparar com a classificação humana e só então decidir o que automatizar.",
-    "Rodar em amostra e comparar com classificacao humana"
-   ],
-   [
-    "C",
-    "Pedir ao fornecedor um documento de garantia de acerto e seguir o que ele recomendar.",
-    "Pedir garantia de acerto ao fornecedor"
-   ]
-  ],
-  "palpite": "B. Demonstração boa não é medição no seu processo. A amostra mostra a taxa real de erro nos SEUS dados e define o checkpoint humano. A é pular a medição; C terceiriza uma decisão que é sua."
- },
- "ferramenta": {
-  "nome": "bpmn.io (editor BPMN no navegador)",
-  "url": "https://demo.bpmn.io/",
-  "oque": "editor gratuito, que roda no navegador, para desenhar diagramas BPMN, sem instalar nada. É a mesma família de tecnologia usada por ferramentas de mercado como a Camunda.",
-  "problema": "processo desenhado em slide ou quadro solto, que só quem desenhou consegue interpretar.",
-  "uso": "mapear um processo AS IS em reunião com o time e exportar o arquivo para revisar depois.",
-  "limitacao": "só desenha e documenta: não executa nem monitora o processo, e o trabalho em equipe exige compartilhar o arquivo manualmente.",
-  "exemplo": "um analista desenha o fluxo de aprovação de compras, marca as decisões sem critério escrito e leva o diagrama para validar com quem executa."
- },
- "salvar": [
-  [
-   "Artigo",
-   "Introducing Claude Haiku 5.5",
-   "https://www.anthropic.com/claude-haiku-5-5",
-   "vale a leitura das seções de desempenho e preço para quem quer calcular o custo por tarefa."
-  ],
-  [
-   "Artigo",
-   "The Great Process Re-Engineering Has Begun (Camunda, maio de 2026)",
-   "https://camunda.com/blog/2026/05/the-great-process-re-engineering-has-begun/",
-   "contexto de mercado para a discussão de processo e IA desta edição, lido como visão de fornecedor."
-  ],
-  [
-   "Ferramenta gratuita",
-   "Portal de vagas da Gupy",
-   "https://portal.gupy.io/",
-   "pesquisa direta por termos como \"analista de processos\" e \"melhoria contínua\", com data de publicação em cada vaga."
-  ]
- ],
- "pergunta": "Qual tarefa repetitiva do seu processo ainda é feita com o recurso mais caro (ou mais lento) que você tem, só porque sempre foi assim?",
- "fechamento": "Se algo aqui foi útil, o maior favor é responder com sua opinião ou encaminhar para alguém que vive tentando descobrir qual tarefa merece qual recurso. E se tem um tema, uma ferramenta ou um tipo de vaga que você quer ver por aqui, é só contar.",
- "pend": [
-  "Edição gerada como **teste v1, enviada somente para almeida.alan9@gmail.com** em 08/10/2026 (quinta-feira). A edição semanal automática roda às terças.",
-  "Notícias verificadas por abertura direta dos links nas páginas oficiais (Anthropic, Camunda, Microsoft). Os itens de Lean e eventos do radar vieram da página de eventos do lean.org e do banner do blog da Microsoft, que não exibem data de publicação; são eventos futuros, não notícias datadas.",
-  "Vagas: 12 vagas do portal da Gupy, publicadas entre 01 e 08/10/2026 (data exibida no portal). Cada link foi aberto individualmente em 08/10; 11 mostraram o botão de candidatura e a vaga da Kuehne+Nagel abriu sem exibir o botão (sem aviso de encerramento). Nenhuma outra plataforma (LinkedIn, Vagas.com, Indeed) foi consultada nesta edição.",
-  "Não houve pauta datada de Lean/Six Sigma dentro dos últimos 7 dias em fontes primárias; o radar traz eventos Lean em vez de notícia.",
-  "O conector de Gmail usado no envio remove imagens do HTML. A versão de e-mail usa blocos de cor, tipografia e emoji; as capas e banners reais só aparecem na versão web (link \"Leia online\" no topo do e-mail).",
-  "A seção \"Cursos gratuitos\" lista Anthropic Academy, Camunda Academy, Escola Virtual.Gov e Microsoft Learn. Gratuidade conferida por busca (não por abertura de cada curso); cada instituição pode mudar as condições.",
-  "O link de inscrição pública da newsletter ainda não existe; por isso o rodapé não traz \"Assine aqui\"."
- ],
- "numero": "03",
- "data_iso": "2026-10-08",
- "data_pt": "8 de outubro de 2026",
- "tagline_header": "Cada tarefa no recurso certo."
+  "numero": "03",
+  "data_iso": "2026-10-08",
+  "data_pt": "8 de outubro de 2026",
+  "tagline_header": "Cada tarefa no recurso certo.",
+  "titulo": "Cada tarefa no recurso certo",
+  "subtitulo": "IA pequena para trabalho de volume, processo como ciclo, o que já existe como ponto de partida e 12 vagas abertas."
 }
