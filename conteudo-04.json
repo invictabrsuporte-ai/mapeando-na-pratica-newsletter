@@ -1,0 +1,164 @@
+{
+ "subjects": [
+  "IA e regras de uso: o que muda para processos",
+  "Sua automação tem regra escrita de uso?",
+  "Nova política de uso da Anthropic em 12/11"
+ ],
+ "preheaders": [
+  "Política de uso da Anthropic, Cyber Mission e o checklist de governança da sua automação",
+  "Antes de ligar a IA no processo, escreva o que ela pode e não pode fazer"
+ ],
+ "SUBJECT_SEND": "IA e regras de uso: o que muda para processos",
+ "abertura": "Todo processo bem desenhado tem regra escrita: quem aprova, até que valor, o que acontece na exceção. Com IA, muita equipe pula essa etapa e só descobre o limite quando algo dá errado. Esta semana a Anthropic atualizou sua política de uso, com vigência a partir de 12 de novembro, e anunciou uma iniciativa de segurança para infraestrutura crítica e software aberto. São lembretes de que ferramentas de IA vêm com regras, e que o seu processo também precisa ter as dele. Nesta edição: o que mudou na política, o que a Cyber Mission diz sobre uso responsável, um radar de eventos de Lean e BPM e um exercício de segunda-feira para escrever as regras de uso da sua automação. Vagas: nesta edição a coleta automática não conseguiu consultar o portal, então não há lista.",
+ "news": [
+  {
+   "h": "A política de uso da Anthropic mudou, e vale ler com olhar de processo 📜",
+   "date": "8 de outubro de 2026",
+   "src": "Anthropic",
+   "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+   "p": [
+    "Em 8 de outubro, a Anthropic publicou a atualização de 2026 da sua Usage Policy, que **entra em vigor em 12 de novembro**. Entre as mudanças descritas pela empresa: uma nova seção contra campanhas enganosas e atividade artificial (contas falsas, sites de notícia fabricados, operações de influência); regras de armas que passam a cobrir software e componentes; uma reescrita da parte de vigilância, que proíbe rastrear pessoas sem consentimento e usar o Claude para decidir quem investigar, prender ou acusar; e requisitos de supervisão humana e de estado seguro quando o Claude é conectado a hardware físico autônomo.",
+    "**Por que importa para processos:** se a sua operação usa IA por API ou em agentes, a política do fornecedor faz parte das restrições do processo, como uma norma ou um contrato. Quem usa IA em decisões sobre pessoas (triagem, análise de risco, investigação) precisa conferir se o desenho ainda cabe nas regras e onde fica a revisão humana.",
+    "**Para aplicar:** coloque no inventário do processo a coluna \"política de uso do fornecedor\" e uma data de revisão."
+   ],
+   "tag": "IA",
+   "tldr": "A Anthropic atualizou a política de uso, com vigência em 12 de novembro, incluindo regras sobre supervisão humana.",
+   "curto": "nova política de uso da IA vale em 12/11",
+   "capa": "Política de uso de IA também é restrição de processo"
+  },
+  {
+   "h": "Anthropic Cyber Mission: IA a serviço de quem defende sistemas 🛡️",
+   "date": "8 de outubro de 2026",
+   "src": "Anthropic",
+   "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+   "p": [
+    "Em 8 de outubro, a Anthropic lançou a Anthropic Cyber Mission, esforço de longo prazo para ajudar defensores a proteger software e sistemas, começando por infraestrutura crítica e código aberto. O Critical Infrastructure Defense Program leva modelos, engenheiros em campo e pesquisa de ameaças a provedores de tecnologia operacional (redes elétricas, água, transporte). Entre os parceiros fundadores citados estão Accenture, Booz Allen, CrowdStrike, Deloitte, Palo Alto Networks, PwC e Rockwell Automation.",
+    "A empresa também lançou o OSS Scanner, serviço gratuito e opcional de varredura de vulnerabilidades para projetos de código aberto, e diz esperar taxa de verdadeiros positivos acima de 90%.",
+    "**Leitura crítica:** é anúncio da própria empresa, e a taxa de 90% é uma expectativa, não um resultado medido por terceiros. **Por que importa:** automação de processos amplia o acesso a dados e sistemas. Segurança e acesso mínimo entram no desenho do TO BE, não depois."
+   ],
+   "tag": "IA",
+   "tldr": "A Anthropic lançou a Cyber Mission, com foco em infraestrutura crítica e código aberto.",
+   "curto": "IA para defesa de sistemas críticos",
+   "capa": "Segurança entra no desenho do processo"
+  },
+  {
+   "h": "Programa de verificação em cibersegurança ganha versão ampliada 🔐",
+   "date": "6 de outubro de 2026",
+   "src": "Anthropic",
+   "url": "https://www.anthropic.com/news/cyber-verification-program",
+   "p": [
+    "Em 6 de outubro, a Anthropic anunciou a versão ampliada do Cyber Verification Program, que oferece capacidades avançadas de segurança, com menos bloqueios automáticos, a profissionais de segurança qualificados. Na sequência, em 8 de outubro, a empresa informou que o Project Glasswing foi incorporado a esse programa.",
+    "**Leitura crítica:** conteúdo da própria fornecedora; os detalhes de elegibilidade estão na página do programa.",
+    "**Por que importa:** o padrão de \"acesso conforme perfil verificado\" é um desenho de processo conhecido: o mesmo recurso tem regras diferentes conforme quem pede e para quê. Pergunte onde o seu processo trata todos os solicitantes do mesmo jeito, mesmo com riscos diferentes."
+   ],
+   "tag": "AUTOMAÇÃO",
+   "tldr": "Programa de verificação da Anthropic libera capacidades de segurança a profissionais qualificados.",
+   "curto": "acesso por perfil verificado",
+   "capa": "Mesmo recurso, regras diferentes por perfil"
+  }
+ ],
+ "radar": [
+  [
+   "Eventos",
+   "a Camunda realiza o CamundaLocal Brussels em 29 de outubro, gratuito, com palestra sobre reengenharia de processos para IA e demonstração do ProcessOS (conteúdo de fornecedor).",
+   "https://page.camunda.com/camundalocal-brussels-2026"
+  ],
+  [
+   "Lean administrativo",
+   "a simulação \"InBox Lean Office Kaizen\" acontece em 28 de outubro, em Rochester (EUA), com foco em Lean aplicado a trabalho de escritório.",
+   "https://www.lean.org/events-training/events/inbox-lean-office-kaizen-simulation/"
+  ],
+  [
+   "Lean",
+   "o Lean Enterprise Institute abre em 6 de novembro o curso online \"Managing on Purpose with Hoshin Kanri\", sobre desdobramento de metas.",
+   "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/"
+  ],
+  [
+   "Tecnologia",
+   "o Microsoft Ignite 2026 acontece de 17 a 20 de novembro, com inscrições abertas.",
+   "https://www.microsoft.com/en-us/power-platform/blog/"
+  ],
+  [
+   "Eventos",
+   "o 2027 Lean Summit está marcado para 16 e 17 de março de 2027.",
+   "https://www.lean.org/summit"
+  ]
+ ],
+ "aplique": {
+  "title": "Escreva as regras de uso da sua automação",
+  "problema": "a equipe usa ou quer usar IA em um processo sem regra escrita sobre o que ela pode fazer, quais dados vê e quem revisa.",
+  "passos": [
+   "Escolha UMA automação ou uso de IA em andamento no seu processo.",
+   "Responda por escrito: quais dados entram, que decisões ela toma sozinha, que decisões só sugere e qual política do fornecedor se aplica.",
+   "Nomeie o responsável pela revisão, a frequência da amostra e o que acontece quando o erro passa do limite combinado.",
+   "Marque uma data para reler a política do fornecedor (a da Anthropic muda em 12/11)."
+  ],
+  "ferramenta": "uma página com 5 campos: Dados / Decide sozinha / Só sugere / Responsável pela revisão / Data de revisão da política.",
+  "duracao": "30 minutos.",
+  "resultado": "uma automação com limites escritos e responsável nomeado, pronta para auditoria simples."
+ },
+ "pausa": {
+  "cenario": "sua equipe vai usar IA para pré-selecionar candidatos a uma vaga interna, e o fornecedor avisa que a política de uso muda no mês que vem.",
+  "pergunta": "o que você faria primeiro?",
+  "opts": [
+   [
+    "A",
+    "Seguir usando e ver se alguém reclama.",
+    "Seguir usando e esperar reclamacao"
+   ],
+   [
+    "B",
+    "Ler a política atualizada, mapear onde a IA decide e onde só sugere, e definir a revisão humana antes da data de vigência.",
+    "Ler a politica e definir revisao humana"
+   ],
+   [
+    "C",
+    "Pedir ao fornecedor que garanta por e-mail que nada muda para nós.",
+    "Pedir garantia por email ao fornecedor"
+   ]
+  ],
+  "palpite": "B. Política é restrição de processo: leia, mapeie e defina o checkpoint humano antes da vigência. A é esperar o problema; C terceiriza uma decisão que é sua."
+ },
+ "ferramenta": {
+  "nome": "bpmn.io (editor BPMN no navegador)",
+  "url": "https://demo.bpmn.io/",
+  "oque": "editor gratuito, no navegador, para desenhar diagramas BPMN sem instalar nada.",
+  "problema": "regras de aprovação e exceção que só existem na cabeça de quem executa.",
+  "uso": "desenhar o fluxo com os pontos de decisão e marcar onde entra a revisão humana.",
+  "limitacao": "só desenha e documenta: não executa nem monitora o processo.",
+  "exemplo": "um analista desenha o fluxo de triagem com IA, marca as decisões automáticas e as que dependem de pessoa, e valida com o dono do processo."
+ },
+ "salvar": [
+  [
+   "Artigo",
+   "2026 Usage Policy update (Anthropic)",
+   "https://www.anthropic.com/news/2026-usage-policy-update",
+   "leitura rápida para checar se o seu uso de IA cabe nas novas regras."
+  ],
+  [
+   "Artigo",
+   "Anthropic Cyber Mission",
+   "https://www.anthropic.com/news/anthropic-cyber-mission",
+   "contexto sobre segurança em automação, lido como visão do fornecedor."
+  ],
+  [
+   "Ferramenta gratuita",
+   "Portal de vagas da Gupy",
+   "https://portal.gupy.io/",
+   "pesquisa direta por \"analista de processos\" e \"melhoria contínua\", com data de publicação."
+  ]
+ ],
+ "pergunta": "Alguma automação ou uso de IA na sua área roda hoje sem regra escrita sobre o que ela pode decidir sozinha?",
+ "fechamento": "Se algo aqui foi útil, responda com sua opinião ou encaminhe para alguém que está desenhando uma automação agora. E se tem um tema, ferramenta ou tipo de vaga que você quer ver por aqui, é só contar.",
+ "pend": [
+  "Vagas: a coleta automática (Gupy) falhou por bloqueio de rede (403) e nenhuma vaga foi incluída nesta edição. Não foram inventadas vagas.",
+  "Notícias: Anthropic aberta via WebFetch (páginas oficiais, resumo por ferramenta). Camunda e Gartner/Forrester/McKinsey não puderam ser abertos; o evento da Camunda veio de busca web (link não aberto). O link do Ignite aponta ao blog da Microsoft (dado herdado da edição anterior).",
+  "A terceira notícia é complementar às duas primeiras (mesmo tema Anthropic/segurança) por falta de outra pauta primária datada nos 7 dias; o Haiku 5.5 (7/10) e o post da Microsoft (1/10) já foram cobertos na edição #03.",
+  "Itens do radar são eventos futuros, não notícias datadas; datas de Lean vêm da edição anterior, não reabertas.",
+  "A versão de e-mail não contém imagens (o Gmail as remove). Não existe link público de inscrição."
+ ],
+ "numero": "04",
+ "data_iso": "2026-10-13",
+ "data_pt": "13 de outubro de 2026",
+ "tagline_header": "Regras claras antes da automação."
+}
