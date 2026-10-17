@@ -19,9 +19,10 @@ ANUNCIE_AD = dict(rotulo='ESPAÇO PARA ANUNCIANTES · MAPEANDO NA PRÁTICA', tit
                   cta='Quero anunciar aqui', url=ANUNCIE)
 # respostas por e-mail (abrem o programa de e-mail do leitor)
 _q = urllib.parse.quote
-OPINIAO = 'mailto:invictabrsuporte@gmail.com?subject=' + _q(f'Minha opinião sobre a edição {N}') + '&body=' + _q('Minha opinião sobre a edição: ')
-PERGUNTA_MAIL = 'mailto:invictabrsuporte@gmail.com?subject=' + _q(f'Resposta à pergunta da edição {N}') + '&body=' + _q('Minha resposta à pergunta da edição: ')
-ENCAMINHAR = 'mailto:?subject=' + _q('Newsletter Mapeando na Prática') + '&body=' + _q('Achei que você ia gostar desta edição: ' + WEB_URL)
+RESP = 'https://mapeandonapratica.com/responder/'  # páginas no domínio próprio: a resposta cai no painel do WordPress
+OPINIAO = f'{RESP}?tipo=opiniao&ed={N}'
+PERGUNTA_MAIL = f'{RESP}?tipo=pergunta&ed={N}'
+ENCAMINHAR = f'{RESP}?tipo=encaminhar&ed={N}&u=' + _q(WEB_URL, safe='')
 def linkar(texto, estilo=''):
     """escapa o texto e transforma 'responda com sua opinião' e 'encaminhe para alguém' em links de e-mail"""
     h = html.escape(texto)
@@ -32,7 +33,7 @@ SITE = 'https://mapeandonapratica.com/invicta/'
 LINKEDIN = 'https://www.linkedin.com/newsletters/mapeando-na-pr%C3%A1tica-7259255564608684033/'
 INSTAGRAM = 'https://www.instagram.com/mapeandonapratica/'
 CLAUDECODE = 'https://mapeandonapratica.com/claudecode/'
-SUGESTAO = 'mailto:invictabrsuporte@gmail.com?subject=' + urllib.parse.quote('O que eu gostaria de ver na newsletter') + '&body=' + urllib.parse.quote('Eu gostaria de ver na newsletter: ')
+SUGESTAO = f'{RESP}?tipo=sugestao&ed={N}'
 AD = dict(tag='PUBLI', titulo='Domine a modelagem de processos com BPMN',
           texto='Aprenda a estruturar operações claras, padronizadas e eficientes, sem depender de sistema e sem teoria solta. Do processo confuso ao fluxo que gera controle e melhoria contínua.',
           cta='Quero dominar BPMN na prática', url='https://mapeandonapratica.com/modelagemdeprocessos/')
@@ -57,9 +58,7 @@ TAGLINE = C.get('tagline_header', 'Cada tarefa no recurso certo.')
 TAGS = ['IA', 'PROCESSOS', 'AUTOMAÇÃO']
 
 def mailto(letter, text):
-    subj = f'Cenario Edicao {N} - Resposta {letter}'
-    body = f'Resposta do cenario - Edicao {N}: OPCAO {letter} - {text}'
-    return 'mailto:invictabrsuporte@gmail.com?subject=' + urllib.parse.quote(subj) + '&body=' + urllib.parse.quote(body)
+    return f'{RESP}?tipo=cenario&ed={N}&op={letter}'
 
 for i, n in enumerate(news):
     n.setdefault('tag', TAGS[i % 3])
@@ -190,7 +189,7 @@ def build(web=False, brevo=False):
     pz = tag('Pausa para pensar', '#7C3AED') + h2('🧠 Cenário da semana') + p('**O cenário:** ' + pausa['cenario']) + p('**A pergunta:** ' + pausa['pergunta'])
     for l, t, m in pausa['opts']:
         pz += p(f'**{l})** {t}', INK, 15, 'margin-bottom:4px;') + f'<p style="margin:0 0 12px 0;">{a(mailto(l, m), "Responder " + l)}</p>'
-    pz += p('Clique em A, B ou C: abre um e-mail já pronto para registrarmos sua resposta. Sua resposta pode aparecer, sem identificação, na próxima edição.', MUT, 14) + p('**Nosso palpite de editor:** ' + pausa['palpite'], INK, 15)
+    pz += p('Clique em A, B ou C para registrar sua resposta numa página rápida, sem precisar de e-mail. Sua resposta pode aparecer, sem identificação, na próxima edição.', MUT, 14) + p('**Nosso palpite de editor:** ' + pausa['palpite'], INK, 15)
     rows.append(section(pz))
     fe = tag('Ferramenta da semana', '#2563EB') + h2('🔧 ' + ferramenta['nome']) + p('**O que é:** ' + ferramenta['oque']) + f'<p style="margin:0 0 14px 0;">{a(ferramenta["url"], ferramenta["url"])}</p>' + p('**Problema que resolve:** ' + ferramenta['problema']) + p('**Melhor uso:** ' + ferramenta['uso']) + p('**Limitação:** ' + ferramenta['limitacao']) + p('**Exemplo prático:** ' + ferramenta['exemplo'])
     rows.append(section(fe))

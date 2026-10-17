@@ -290,7 +290,7 @@ def build_web(ctx):
     opts = ''.join(f'<li><p><strong>{e(l)})</strong> {e(t)}</p><a class="btn" href="{e(g["mailto"](l, m), quote=True)}">Responder {e(l)}</a></li>' for l, t, m in pz['opts'])
     parts.append(f'<section class="s" id="pausa"><div class="wrap"><p class="eyebrow" style="color:#7C3AED">Pausa para pensar</p><h2 class="t sm">Cenário da semana</h2>'
                  f'<p><strong>O cenário:</strong> {e(pz["cenario"])}</p><p><strong>A pergunta:</strong> {e(pz["pergunta"])}</p><ul class="opts">{opts}</ul>'
-                 f'<p class="note">Clique em A, B ou C: abre um e-mail já pronto para registrarmos sua resposta. Sua resposta pode aparecer, sem identificação, na próxima edição.</p>'
+                 f'<p class="note">Clique em A, B ou C para registrar sua resposta numa página rápida, sem precisar de e-mail. Sua resposta pode aparecer, sem identificação, na próxima edição.</p>'
                  f'<aside class="callout"><p class="eyebrow">Nosso palpite de editor</p><p>{e(pz["palpite"])}</p></aside></div></section>')
     # --- ferramenta
     fe = g['ferramenta']; ids.append(('ferramenta', 'FERRAMENTA', limpo(fe['nome'])))
