@@ -116,7 +116,7 @@ md.append(f'## 🔧 Ferramenta da semana — {ferramenta["nome"]}\n\n**O que é:
 md.append(f'## 📣 {AD["tag"]} — {AD["titulo"]}\n\n{AD["texto"]}\n\n[{AD["cta"]} →]({AD["url"]})\n\n---\n')
 md.append('## 🎓 Cursos gratuitos para a sua semana\n\n' + '\n\n'.join(f'**{g["nome"]}** ({g["tag"]}): {g["desc"]} [{g["cta"]}]({g["url"]})' for g in GRATUITOS) + '\n\n---\n')
 if vagas:
-    md.append('## 💼 Oportunidades em Processos\n\nVagas publicadas nos últimos dias no portal da Gupy (data de publicação conforme exibido no portal).\n\n| Cargo | Empresa | Local/Modalidade | Publicada em | Link |\n|---|---|---|---|---|\n' + '\n'.join(f'| {v["cargo"]} | {v["emp"]} | {v["local"]} | {v["pub"]} | [Ver vaga]({v["url"]}) |' for v in vagas) + '\n\nAs vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.\n\n---\n')
+    md.append('## 💼 Oportunidades em Processos\n\nVagas publicadas nos últimos dias em portais públicos de emprego (Gupy, Vagas.com e LinkedIn); data conforme exibida em cada portal.\n\n| Cargo | Empresa | Local/Modalidade | Publicada em | Link |\n|---|---|---|---|---|\n' + '\n'.join(f'| {v["cargo"]} | {v["emp"]} | {v["local"]} | {v["pub"]} | [Ver vaga]({v["url"]}) |' for v in vagas) + '\n\nAs vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.\n\n---\n')
 md.append('## 📚 Conteúdo para salvar\n\n' + '\n'.join(f'- **{t}:** [{n}]({u}) — {d}' for t, n, u, d in salvar) + '\n\n---\n')
 md.append(f'## ✍️ Pergunta do leitor\n\n{pergunta}\n\nResponda este e-mail — sua resposta pode aparecer, sem identificação, na próxima edição.\n\n---\n')
 md.append(f'## Fechamento\n\n{fechamento} [O que você gostaria de ver aqui? →]({SUGESTAO})\n\nQuero aprender Claude Code na prática? [Conhecer o curso]({CLAUDECODE}).\n\nAté a próxima edição.\n\n---\n')
@@ -204,7 +204,7 @@ def build(web=False, brevo=False):
         tr = ''
         for i, v in enumerate(vagas):
             tr += f'<tr style="background-color:{"#FFFFFF" if i % 2 == 0 else "#F8F5EE"};"><td {td}><strong>{e(v["cargo"])}</strong></td><td {td}>{e(v["emp"])}</td><td {td}>{e(v["local"])}</td><td {td}>{e(v["pub"])}</td><td {td}>{a(v["url"], "Ver vaga")}</td></tr>'
-        vg = tag('Carreira', '#0F766E') + h2('💼 Oportunidades em Processos') + p('Vagas publicadas nos últimos dias no portal da Gupy (data conforme exibida no portal).', MUT, 14)
+        vg = tag('Carreira', '#0F766E') + h2('💼 Oportunidades em Processos') + p('Vagas publicadas nos últimos dias em portais públicos de emprego (Gupy, Vagas.com e LinkedIn); data conforme exibida em cada portal.', MUT, 14)
         vg += f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; {SANS} font-size:13px; line-height:1.4; color:{INK};"><tr><th {th}>Cargo</th><th {th}>Empresa</th><th {th}>Local</th><th {th}>Publicada</th><th {th}>Link</th></tr>{tr}</table>'
         vg += p('As vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.', MUT, 13, 'margin-top:12px;')
         rows.append(section(vg))

@@ -1,0 +1,168 @@
+{
+ "numero": "05",
+ "data_iso": "2026-10-20",
+ "data_pt": "20 de outubro de 2026",
+ "tagline_header": "Antes de cortar a camada, mapeie o fluxo.",
+ "subjects": [
+  "Kroger, Telia e Netflix cortam vagas: o processo foi mapeado?",
+  "Cortar camada sem mapear o fluxo costuma sair caro",
+  "12 vagas em processos + 3 cortes que pedem um mapa"
+ ],
+ "preheaders": [
+  "Kroger, Telia e Netflix anunciaram cortes nesta semana. O que isso ensina sobre mapear antes de reduzir.",
+  "Um exercício de 30 minutos para contar os handoffs do seu processo + 12 vagas abertas"
+ ],
+ "SUBJECT_SEND": "Kroger, Telia e Netflix cortam vagas: o processo foi mapeado?",
+ "abertura": "Três grandes empresas anunciaram cortes de pessoal entre 12 e 14 de outubro: Kroger, Telia e Netflix. Em nenhuma das coberturas que li aparece um mapa do processo que justifique onde o corte acontece. Isso não quer dizer que as decisões estejam erradas: quer dizer que, de fora, não dá para saber qual fluxo ficou redundante. Em processos, a pergunta que antecede o corte é sempre a mesma: que atividade deixa de existir, e quem passa a fazer o que sobra? Nesta edição: o que cada empresa disse oficialmente, o que ficou sem resposta, um radar com dois cortes menores e três eventos de Lean e BPM, e um exercício de 30 minutos para contar os handoffs do seu próprio processo. Vagas: 12 oportunidades em processos e melhoria contínua, publicadas nos últimos dias.",
+ "news": [
+  {
+   "h": "Kroger vai cortar cerca de 3 mil cargos corporativos em três anos 🛒",
+   "date": "12 de outubro de 2026",
+   "src": "KSL / Associated Press",
+   "url": "https://www.ksl.com/article/51635507/kroger-plans-to-eliminate-3000-corporate-roles-memo-shows-as-it-expands-ai-use",
+   "p": [
+    "Segundo um memorando interno visto pela Reuters e reproduzido pela KSL, a Kroger planeja eliminar cerca de **3 mil cargos corporativos ao longo dos próximos três anos**. A empresa tem 8.200 funcionários corporativos, e o corte atingiria cerca de 37% deles. O memorando, nos trechos citados, diz que a Kroger deve \"reduzir trabalho duplicado e se adaptar com tecnologia\", e que a economia ajudaria a baixar preços e investir nos funcionários das lojas.",
+    "**O que a matéria não diz:** o texto não cita IA como causa no memorando; a ligação com inteligência artificial é do enquadramento da Reuters (o título fala em \"expansão do uso de IA\"). Também não há indicação de quais fluxos ou áreas concentram o trabalho duplicado.",
+    "**Por que importa para processos:** \"trabalho duplicado\" é um sintoma que se enxerga num mapa de fluxo, não numa planilha de quadro. Antes de decidir quantas pessoas, a pergunta é em quais etapas a mesma informação é refeita, reconferida ou aprovada duas vezes. **Para aplicar:** o exercício desta edição mostra como contar isso no seu processo."
+   ],
+   "tag": "LEAN",
+   "tldr": "A Kroger planeja cortar cerca de 3 mil cargos corporativos em três anos, citando trabalho duplicado.",
+   "curto": "3 mil cargos corporativos em 3 anos",
+   "capa": "Trabalho duplicado se enxerga no mapa, não na planilha de quadro"
+  },
+  {
+   "h": "Telia corta cerca de 900 posições e leva 220 da tecnologia central para os países 📡",
+   "date": "12 de outubro de 2026",
+   "src": "Telia Company (comunicado oficial)",
+   "url": "https://www.placera.se/pressmeddelanden/telia-company-telia-foreslar-ytterligare-lokalisering-av-verksamheten-och-avser-na-arliga-bruttobesparingar-om-sek-1-miljard-20261012",
+   "p": [
+    "No comunicado de 12 de outubro, a Telia propõe reduzir **cerca de 900 posições** (de cerca de 14.100 em 1º de outubro, algo como 6,4%, conta nossa), com economia bruta anual de SEK 1 bilhão e conclusão prevista até 31 de dezembro, sujeita às negociações sindicais habituais. Por país: Suécia 260, Finlândia 280, Noruega 150, Lituânia 110 e Estônia 100.",
+    "O detalhe de processo: a empresa também planeja **mover cerca de 220 posições, principalmente da unidade de tecnologia do grupo para as unidades dos países**. O motivo declarado é fortalecer as unidades locais para atender novas necessidades de clientes e crescer com rentabilidade.",
+    "**Leitura nossa (não é afirmação da Telia):** aproximar quem presta o serviço de quem o recebe é um movimento clássico de SIPOC, em que o fornecedor deixa de ficar longe do cliente do processo. O comunicado não diz quais fluxos mudam nem como a Telia vai medir se a decisão ficou mais rápida.",
+    "**Para aplicar:** no seu processo, quem decide está perto de quem sente o problema? Se a resposta é \"depende de outra área\", há um handoff para medir."
+   ],
+   "tag": "BPM",
+   "tldr": "A Telia propõe cortar cerca de 900 posições e mover 220 da tecnologia central para os países.",
+   "curto": "900 posições e tecnologia mais perto do cliente",
+   "capa": "Quem decide está perto de quem sente o problema?"
+  },
+  {
+   "h": "Netflix anuncia corte de quase 1.000 vagas e fala em \"disciplina\" 🎬",
+   "date": "14 de outubro de 2026",
+   "src": "Associated Press (via ABC News)",
+   "url": "https://abcnews.com/Business/wireStory/netflix-laying-off-6-workforce-biggest-round-job-137262053",
+   "p": [
+    "Em 14 de outubro, a Netflix anunciou, em memorando, o corte de **quase 1.000 posições, cerca de 6% do quadro**. Segundo a AP, as equipes de produto, tecnologia, jurídico e recursos humanos seriam as mais afetadas. O memorando diz que a empresa precisa ser \"disciplinada sobre onde prioriza suas pessoas e recursos\". A matéria não menciona IA e informa que a empresa divulga resultados na semana seguinte.",
+    "**O que ficou sem resposta:** quatro áreas sem relação direta entre si aparecem na lista, e o texto não explica o que mudou em cada fluxo para justificar a redução. Corte por área sem causa por fluxo costuma ser decisão de custo, não de redesenho. É uma leitura nossa, não um fato sobre a Netflix.",
+    "**Por que importa para processos:** a pergunta de gestão é \"que trabalho deixou de ser necessário em jurídico, em RH, em produto?\". Sem essa resposta, o trabalho tende a voltar, só que distribuído entre quem ficou."
+   ],
+   "tag": "PROCESSOS",
+   "tldr": "A Netflix anunciou o corte de quase 1.000 vagas (cerca de 6%), em produto, tecnologia, jurídico e RH.",
+   "curto": "quase 1.000 vagas, cerca de 6%",
+   "capa": "Que trabalho deixou de ser necessário?"
+  }
+ ],
+ "radar": [
+  [
+   "Reestruturação",
+   "a Airtable, comprada pela Bending Spoons, terá \"grande parte\" do time desligado; a empresa disse que o corte reflete a crença de que times pequenos entregam mais, e não uma avaliação de desempenho. O número não foi divulgado (12 de outubro).",
+   "https://dnyuz.com/2026/10/12/airtables-new-owner-is-laying-off-a-large-part-of-its-team/"
+  ],
+  [
+   "Reestruturação",
+   "a Lightspeed anunciou o corte de 250 posições, por demissões e vagas não preenchidas, segundo o título da Canadian Press (13 de outubro). O texto completo não foi acessível na checagem.",
+   "https://www.ctvnews.ca/business/article/lightspeed-cuts-250-roles-by-laying-off-staff-not-filling-vacancies/"
+  ],
+  [
+   "BPM",
+   "o CamundaLocal Brussels acontece em 29 de outubro, gratuito e com inscrição obrigatória, com palestra sobre reengenharia de processos e demonstração do ProcessOS (conteúdo de fornecedor).",
+   "https://page.camunda.com/camundalocal-brussels-2026"
+  ],
+  [
+   "Lean administrativo",
+   "a simulação \"InBox Lean Office Kaizen\", sobre Lean em processos transacionais, acontece em 28 de outubro em Rochester (EUA), presencial e pago.",
+   "https://www.lean.org/events-training/events/inbox-lean-office-kaizen-simulation/"
+  ],
+  [
+   "Lean",
+   "o curso online \"Managing on Purpose with Hoshin Kanri\", do Lean Enterprise Institute, começa em 6 de novembro, com seis encontros às sextas.",
+   "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/"
+  ]
+ ],
+ "aplique": {
+  "title": "Conte os handoffs do seu processo antes de mexer na equipe",
+  "problema": "a equipe sente que o processo é lento e pesado, mas ninguém sabe quantas vezes o trabalho muda de mãos nem quantas etapas só repetem uma conferência.",
+  "passos": [
+   "Escolha UM processo que você conhece bem e liste as etapas em ordem, do gatilho de início até a entrega ao cliente.",
+   "Marque cada ponto em que o trabalho passa de uma pessoa ou área para outra (handoff) e cada aprovação.",
+   "Para cada aprovação, escreva quantas vezes ela recusou ou mudou algo nos últimos 30 dias (uma estimativa honesta serve, marcada como estimativa).",
+   "Circule as etapas em que a mesma informação é digitada, conferida ou aprovada mais de uma vez.",
+   "Leve a lista ao dono do processo e escolha UMA etapa para testar uma simplificação por duas semanas."
+  ],
+  "ferramenta": "uma tabela simples com 5 colunas: Etapa / Quem faz / Handoff? (sim/não) / Aprovação? (sim/não) / Vezes que mudou algo no mês.",
+  "duracao": "30 a 45 minutos.",
+  "resultado": "uma lista objetiva de handoffs e aprovações, com candidatas a simplificar, antes de qualquer conversa sobre quadro."
+ },
+ "pausa": {
+  "cenario": "a diretoria pede 15% de redução de custo da sua área até o fim do trimestre, e o primeiro item da pauta é cortar uma camada de coordenação.",
+  "pergunta": "o que você faria primeiro?",
+  "opts": [
+   [
+    "A",
+    "Cortar a camada e redistribuir o trabalho entre quem fica.",
+    "Cortar a camada e redistribuir"
+   ],
+   [
+    "B",
+    "Mapear o fluxo, listar o que a camada de coordenação faz hoje e decidir o que deixa de existir, o que muda de dono e o que continua.",
+    "Mapear antes de cortar"
+   ],
+   [
+    "C",
+    "Pedir que cada coordenador justifique o próprio cargo.",
+    "Cada um justifica o cargo"
+   ]
+  ],
+  "palpite": "B. O corte só reduz custo de verdade se alguma atividade deixar de existir. A redistribui o mesmo trabalho com menos gente; C mede o cargo, não o fluxo."
+ },
+ "ferramenta": {
+  "nome": "diagrams.net (draw.io)",
+  "url": "https://app.diagrams.net/",
+  "oque": "editor gratuito de diagramas no navegador, com modelos de fluxograma e raias.",
+  "problema": "processos que só existem na cabeça de quem executa, sem um mapa visível para discutir handoffs.",
+  "uso": "desenhar o fluxo em raias (uma por área), marcar cada cruzamento de raia como handoff e contar quantos existem.",
+  "limitacao": "desenha e documenta, mas não mede tempos nem executa o processo.",
+  "exemplo": "um analista desenha o fluxo de aprovação de despesas em raias, conta 7 cruzamentos e leva ao gestor a pergunta de quais são realmente necessários."
+ },
+ "salvar": [
+  [
+   "Documento",
+   "Comunicado da Telia sobre a proposta de redução (12/10)",
+   "https://www.placera.se/pressmeddelanden/telia-company-telia-foreslar-ytterligare-lokalisering-av-verksamheten-och-avser-na-arliga-bruttobesparingar-om-sek-1-miljard-20261012",
+   "fonte primária, em sueco, útil para ver como uma empresa descreve o motivo e o prazo de uma reestruturação."
+  ],
+  [
+   "Ferramenta gratuita",
+   "diagrams.net (draw.io)",
+   "https://app.diagrams.net/",
+   "para montar o mapa em raias do exercício desta edição."
+  ],
+  [
+   "Curso",
+   "Managing on Purpose with Hoshin Kanri (LEI)",
+   "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/",
+   "curso online do Lean Enterprise Institute sobre desdobramento de metas, a partir de 6 de novembro."
+  ]
+ ],
+ "pergunta": "Qual é o processo da sua área em que você mais desconfia que existe trabalho duplicado, e o que você precisaria ver num mapa para ter certeza?",
+ "fechamento": "Se algo aqui foi útil, responda com sua opinião ou encaminhe para alguém que está desenhando um corte ou um redesenho agora. E se tem um tema, ferramenta ou tipo de vaga que você quer ver por aqui, é só contar.",
+ "pend": [
+  "Notícias vêm da pesquisa diária do projeto (Invicta-OS, 12 a 17/10) e foram conferidas nas fontes: Kroger (KSL), Telia (comunicado oficial), Netflix (AP/ABC), Airtable (DNYUZ), Lightspeed (CTV, só título e data) e os três eventos (páginas oficiais).",
+  "Não confirmado e deixado de fora: a frase \"mais camadas, mais handoffs e mais overhead\" atribuída ao CEO da Kroger não aparece no artigo da KSL; o caso Microsoft Israel (Israel Hayom) não pôde ser aberto (403). Gartner e Workday são de antes da janela.",
+  "Lightspeed: o corpo da matéria não estava acessível; o radar usa só o título e a data. A data de 5 de novembro para mais detalhes (resultados) não foi confirmada.",
+  "Esta semana não houve notícia datada de BPM, Lean ou ferramentas no período; por isso o radar traz eventos futuros verificados nas páginas oficiais.",
+  "Vagas: 12 vagas coletadas em Gupy, Vagas.com e LinkedIn em 17/10; datas conforme cada portal, links respondendo na coleta. Podem encerrar a qualquer momento.",
+  "As leituras marcadas como \"leitura nossa\" são interpretação editorial, não afirmação das empresas citadas.",
+  "A versão de e-mail não contém imagens (o Gmail as remove). Não existe link público de inscrição."
+ ]
+}

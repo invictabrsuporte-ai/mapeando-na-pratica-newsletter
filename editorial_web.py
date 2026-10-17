@@ -280,7 +280,8 @@ def build_web(ctx):
     parts.append(f'<hr class="sep"><section class="s" id="radar"><div class="wrap"><p class="eyebrow" style="color:var(--orange)">Radar</p><h2 class="t sm">Você precisa saber</h2><ul class="rad">{rad}</ul></div></section>')
     # --- aplique
     ap = g['aplique']; ids.append(('aplique', 'NA PRÁTICA', limpo(ap['title'])))
-    steps = ''.join(f'<li><span>{e(re.sub(r"^\d+[.)]\s*", "", s))}</span></li>' for s in ap['passos'])
+    _num = re.compile(r'^\d+[.)]\s*')  # fora da f-string: compatível com Python 3.11
+    steps = ''.join(f'<li><span>{e(_num.sub("", s))}</span></li>' for s in ap['passos'])
     parts.append(f'<section class="s" id="aplique"><div class="wrap"><div class="panel"><p class="eyebrow" style="color:var(--orange)">Aplique na segunda-feira · Na prática</p><h2 class="t sm">{e(limpo(ap["title"]))}</h2>'
                  f'<p><strong>Problema que resolve:</strong> {e(ap["problema"])}</p><p><strong>Passo a passo</strong></p><ol class="steps">{steps}</ol>'
                  f'<dl class="facts"><dt>Ferramenta ou template</dt><dd>{e(ap["ferramenta"])}</dd><dt>Duração estimada</dt><dd>{e(ap["duracao"])}</dd><dt>Resultado esperado</dt><dd>{e(ap["resultado"])}</dd></dl></div></div></section>')
@@ -311,7 +312,7 @@ def build_web(ctx):
         ids.append(('vagas', 'CARREIRA', f'{len(g["vagas"])} vagas em processos'))
         jb = ''.join(f'<li><div><strong>{e(v["cargo"])}</strong><span>{e(v["emp"])} · {e(v["local"])} · publicada em {e(v["pub"])}</span></div><a href="{e(v["url"], quote=True)}" aria-label="Ver vaga: {e(v["cargo"])}, {e(v["emp"])}">Ver vaga →</a></li>' for v in g['vagas'])
         parts.append(f'<section class="s" id="vagas"><div class="wrap"><p class="eyebrow" style="color:#0F766E">Carreira</p><h2 class="t sm">Oportunidades em Processos</h2>'
-                     f'<p class="note">Vagas publicadas nos últimos dias no portal da Gupy (data conforme exibida no portal).</p><ul class="jobs">{jb}</ul>'
+                     f'<p class="note">Vagas publicadas nos últimos dias em portais públicos de emprego (Gupy, Vagas.com e LinkedIn); data conforme exibida em cada portal.</p><ul class="jobs">{jb}</ul>'
                      f'<p class="note" style="margin-top:14px">As vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.</p></div></section>')
     # --- salvar
     ids.append(('salvar', 'GUARDAR', 'conteúdo para salvar'))

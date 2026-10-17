@@ -1,0 +1,4 @@
+Marcadores de aprovação e envio (um par por edição). Não edite à mão.
+
+edicao-NN.aprovada  -> criado quando o Alan aprova a edição NN. Sem ele, a rotina de terça NÃO envia aos inscritos.
+edicao-NN.enviada   -> criado pela rotina de terça depois do envio (data e contagens). Com ele, a edição nunca é reenviada.
