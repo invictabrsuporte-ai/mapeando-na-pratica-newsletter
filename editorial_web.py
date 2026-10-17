@@ -223,7 +223,7 @@ def build_web(ctx):
     """ctx: dict com N, DATE_PT, DATE_ISO, BASE, WEB_URL, news, radar, abertura, aplique, pausa, ferramenta, salvar,
     pergunta, fechamento, vagas, AD, GRATUITOS, SUGESTAO, ANUNCIE, SITE, LINKEDIN, INSTAGRAM, CLAUDECODE, mailto, C"""
     g = ctx; N = g['N']; news = g['news']
-    figs = ilustracoes(news, N)
+    figs = {}  # sem ilustrações-fluxograma
     # tempo de leitura calculado pelo conteúdo
     words = len(re.sub(r'<[^>]+>', ' ', g.get('texto_total', '')).split())
     texto = [g['abertura']] + [' '.join(n['p']) + ' ' + n.get('tldr', '') for n in news]
@@ -324,8 +324,8 @@ def build_web(ctx):
     parts.append(f'<section class="s" id="salvar"><div class="wrap"><p class="eyebrow" style="color:var(--orange)">Para guardar</p><h2 class="t sm">Conteúdo para salvar</h2><ul class="save">{sv}</ul></div></section>')
     # --- encerramento
     parts.append(f'<section class="s close" id="fim"><div class="wrap"><p class="eyebrow" style="color:var(--orange)">Sua vez</p><h2 class="t sm">Pergunta do leitor</h2><p>{e(g["pergunta"])}</p>'
-                 f'<p class="note">Responda este e-mail — sua resposta pode aparecer, sem identificação, na próxima edição.</p>'
-                 f'<hr class="sep" style="margin:36px 0"><h2 class="t sm">Até a próxima</h2><p>{e(g["fechamento"])}</p>'
+                 f'<p><a class="btn pri" href="{e(g["PERGUNTA_MAIL"], quote=True)}">Responder a pergunta →</a></p><p class="note">Sua resposta pode aparecer, sem identificação, na próxima edição.</p>'
+                 f'<hr class="sep" style="margin:36px 0"><h2 class="t sm">Até a próxima</h2><p>{g["linkar"](g["fechamento"])}</p>'
                  f'<p><a class="btn pri" href="{e(g["SUGESTAO"], quote=True)}">O que você gostaria de ver aqui? →</a></p>'
                  f'<p>Quero aprender Claude Code na prática? <a href="{g["CLAUDECODE"]}">Conhecer o curso</a>.</p>'
                  f'<div class="sig"><img src="avatar-alan.jpg" alt="Alan Almeida" width="64" height="64" loading="lazy"><p><b>Alan Almeida</b><br><span class="note">Invicta · Mapeando na Prática</span></p></div></div></section>')
