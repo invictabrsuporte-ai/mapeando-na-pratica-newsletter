@@ -314,6 +314,10 @@ def build_web(ctx):
         parts.append(f'<section class="s" id="vagas"><div class="wrap"><p class="eyebrow" style="color:#0F766E">Carreira</p><h2 class="t sm">Oportunidades em Processos</h2>'
                      f'<p class="note">Vagas publicadas nos últimos dias em portais públicos de emprego (Gupy, Vagas.com e LinkedIn); data conforme exibida em cada portal.</p><ul class="jobs">{jb}</ul>'
                      f'<p class="note" style="margin-top:14px">As vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.</p></div></section>')
+    # --- anuncie aqui (mesmo formato da publicidade)
+    AA = g['ANUNCIE_AD']
+    parts.append(f'<section class="s"><div class="wide"><div class="ad"><div class="bd"><p class="eyebrow">{e(AA["rotulo"])}</p><h2>{e(AA["titulo"])}</h2><p>{e(AA["texto"])}</p>'
+                 f'<a class="btn" href="{e(AA["url"], quote=True)}">{e(AA["cta"])} →</a></div></div></div></section>')
     # --- salvar
     ids.append(('salvar', 'GUARDAR', 'conteúdo para salvar'))
     sv = ''.join(f'<li><b>{e(t)}</b><a href="{e(u, quote=True)}">{e(n)}</a> — {e(d)}</li>' for t, n, u, d in g['salvar'])

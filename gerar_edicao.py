@@ -12,7 +12,11 @@ BASE = f'edicao-{N}-{DATE_ISO}'
 vagas = json.load(open(VP, encoding='utf-8')) if os.path.exists(VP) else []
 PAGES = 'https://invictabrsuporte-ai.github.io/mapeando-na-pratica-newsletter/'
 WEB_URL = PAGES + BASE + '.html'
-ANUNCIE = 'https://tally.so/r/2EMMOp'
+ANUNCIE = f'https://mapeandonapratica.com/anuncie/?utm_source=newsletter&utm_medium=email&utm_campaign=edicao-{N}'
+# espaço para anunciantes (mesmo formato do bloco PUBLICIDADE). O número de inscritos é uma afirmação comercial: só altere aqui, com base na contagem real.
+ANUNCIE_AD = dict(rotulo='ESPAÇO PARA ANUNCIANTES · MAPEANDO NA PRÁTICA', titulo='Anuncie aqui',
+                  texto='Nossa newsletter começou agora e já tem mais de 1.000 inscritos: profissionais que buscam melhoria contínua nas empresas todos os dias. Se você quer divulgar seu produto, SaaS ou serviço para esse público, fale com a gente.',
+                  cta='Quero anunciar aqui', url=ANUNCIE)
 SITE = 'https://mapeandonapratica.com/invicta/'
 LINKEDIN = 'https://www.linkedin.com/newsletters/mapeando-na-pr%C3%A1tica-7259255564608684033/'
 INSTAGRAM = 'https://www.instagram.com/mapeandonapratica/'
@@ -114,6 +118,7 @@ md.append(f'## 🛠️ Aplique na segunda-feira — {aplique["title"]}\n\n**Prob
 md.append(f'## 🧠 Pausa para pensar — Cenário da semana\n\n**O cenário:** {pausa["cenario"]}\n\n**A pergunta:** {pausa["pergunta"]}\n\n' + '\n\n'.join(f'{l}) {t}\n[Responder {l}]({mailto(l, m)})' for l, t, m in pausa['opts']) + f'\n\n**Nosso palpite de editor:** {pausa["palpite"]}\n\n---\n')
 md.append(f'## 🔧 Ferramenta da semana — {ferramenta["nome"]}\n\n**O que é:** {ferramenta["oque"]} [{ferramenta["url"]}]({ferramenta["url"]})\n\n**Problema que resolve:** {ferramenta["problema"]}\n\n**Melhor uso:** {ferramenta["uso"]}\n\n**Limitação:** {ferramenta["limitacao"]}\n\n**Exemplo prático:** {ferramenta["exemplo"]}\n\n---\n')
 md.append(f'## 📣 {AD["tag"]} — {AD["titulo"]}\n\n{AD["texto"]}\n\n[{AD["cta"]} →]({AD["url"]})\n\n---\n')
+md.append(f'## 📣 {ANUNCIE_AD["titulo"]}\n\n{ANUNCIE_AD["texto"]}\n\n[{ANUNCIE_AD["cta"]} →]({ANUNCIE_AD["url"]})\n\n---\n')
 md.append('## 🎓 Cursos gratuitos para a sua semana\n\n' + '\n\n'.join(f'**{g["nome"]}** ({g["tag"]}): {g["desc"]} [{g["cta"]}]({g["url"]})' for g in GRATUITOS) + '\n\n---\n')
 if vagas:
     md.append('## 💼 Oportunidades em Processos\n\nVagas publicadas nos últimos dias em portais públicos de emprego (Gupy, Vagas.com e LinkedIn); data conforme exibida em cada portal.\n\n| Cargo | Empresa | Local/Modalidade | Publicada em | Link |\n|---|---|---|---|---|\n' + '\n'.join(f'| {v["cargo"]} | {v["emp"]} | {v["local"]} | {v["pub"]} | [Ver vaga]({v["url"]}) |' for v in vagas) + '\n\nAs vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.\n\n---\n')
@@ -208,6 +213,13 @@ def build(web=False, brevo=False):
         vg += f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse; {SANS} font-size:13px; line-height:1.4; color:{INK};"><tr><th {th}>Cargo</th><th {th}>Empresa</th><th {th}>Local</th><th {th}>Publicada</th><th {th}>Link</th></tr>{tr}</table>'
         vg += p('As vagas podem ser encerradas ou alteradas pelas empresas a qualquer momento.', MUT, 13, 'margin-top:12px;')
         rows.append(section(vg))
+    anu = (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:{NAVY}; border-radius:12px;"><tr><td style="padding:6px 0 0 0; border-top:6px solid {ORANGE}; border-radius:12px;">'
+           f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:22px 28px 26px 28px;">'
+           f'<p style="margin:0 0 10px 0; {SANS} font-size:11px; letter-spacing:2px; color:#CBD5E1;">{e(ANUNCIE_AD["rotulo"])}</p>'
+           f'<h2 style="margin:0 0 10px 0; {SANS} font-size:26px; line-height:1.2; color:#FFFFFF;">{e(ANUNCIE_AD["titulo"])}</h2>'
+           f'<p style="margin:0 0 16px 0; {FONT} font-size:16px; line-height:1.6; color:#E2E8F0;">{e(ANUNCIE_AD["texto"])}</p>'
+           f'{btn(ANUNCIE_AD["url"], ANUNCIE_AD["cta"] + " →")}</td></tr></table></td></tr></table>')
+    rows.append(f'<tr><td style="padding:0 0 16px 0;">{anu}</td></tr>')
     sv = tag('Para guardar', ORANGE) + h2('📚 Conteúdo para salvar') + ''.join(f'<p style="margin:0 0 10px 0; {FONT} font-size:15px; line-height:1.55; color:{INK};"><strong>{e(t)}:</strong> {a(u, n)} — {e(d)}</p>' for t, n, u, d in salvar)
     rows.append(section(sv))
     rows.append(section(tag('Sua vez', ORANGE) + h2('✍️ Pergunta do leitor') + p(pergunta) + p('Responda este e-mail — sua resposta pode aparecer, sem identificação, na próxima edição.', MUT, 14), '#FFF7ED'))
@@ -239,7 +251,7 @@ import editorial_web
 open(BASE + '.html', 'w', encoding='utf-8').write(editorial_web.build_web(dict(
     N=N, DATE_PT=DATE_PT, DATE_ISO=DATE_ISO, BASE=BASE, WEB_URL=WEB_URL, news=news, radar=radar, abertura=abertura, aplique=aplique, pausa=pausa,
     ferramenta=ferramenta, salvar=salvar, pergunta=pergunta, fechamento=fechamento, vagas=vagas, AD=AD, GRATUITOS=GRATUITOS, SUGESTAO=SUGESTAO,
-    ANUNCIE=ANUNCIE, SITE=SITE, LINKEDIN=LINKEDIN, INSTAGRAM=INSTAGRAM, CLAUDECODE=CLAUDECODE, mailto=mailto, C=C, preheaders=preheaders)))
+    ANUNCIE=ANUNCIE, ANUNCIE_AD=ANUNCIE_AD, SITE=SITE, LINKEDIN=LINKEDIN, INSTAGRAM=INSTAGRAM, CLAUDECODE=CLAUDECODE, mailto=mailto, C=C, preheaders=preheaders)))
 em = open(BASE + '-email.html', encoding='utf-8').read()
 print('email bytes', len(em.encode('utf-8')), '| img', em.count('<img'), '| style-tag', em.count('<style'), '| bg-image', em.count('background-image'), '| script', em.count('<script'), '| vagas', len(vagas), '| web editorial ok')
 
