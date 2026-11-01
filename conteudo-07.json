@@ -1,0 +1,166 @@
+{
+ "numero": "07",
+ "data_iso": "2026-11-03",
+ "data_pt": "3 de novembro de 2026",
+ "tagline_header": "Retorno de IA sem número de antes não prova nada.",
+ "subjects": [
+  "44% dos CEOs não provam o retorno da IA",
+  "IA sem baseline: o que a Gartner mediu",
+  "Magna lucrou com processo, não com narrativa"
+ ],
+ "preheaders": [
+  "Gartner, Magna e Critical Software: o que cada uma mediu e o que ficou sem número.",
+  "Exercício de 30 minutos: registre o antes de um processo que recebeu IA, para provar o depois"
+ ],
+ "SUBJECT_SEND": "44% dos CEOs não provam o retorno da IA",
+ "abertura": "Entre 26 de outubro e 1º de novembro, três notícias trataram da mesma pergunta por ângulos diferentes: quem consegue provar o que mudou? A Gartner perguntou a 203 CEOs sobre o retorno financeiro da IA e 44% disseram ter dificuldade de demonstrá-lo. A Magna creditou a melhora de margem a iniciativas de excelência operacional, sem citar IA. Já uma empresa de software de Coimbra falou em funções que deixam de fazer sentido, mas não em qual etapa do trabalho muda. Nesta edição: o que cada uma disse, o que ficou sem resposta, um radar com quatro itens e um exercício de 30 minutos para registrar o antes de um processo que recebeu IA. Vagas: nesta semana a coleta automática não conseguiu acessar os portais, então não há lista de vagas nesta edição.",
+ "news": [
+  {
+   "h": "Gartner: 44% dos CEOs têm dificuldade de provar o retorno da IA 📊",
+   "date": "27 de outubro de 2026",
+   "src": "TI Inside (sobre o 2027 Gartner CEO Survey)",
+   "url": "https://tiinside.com.br/27/10/2026/44-dos-ceos-tem-dificuldade-para-demonstrar-retornos-financeiros-da-ia-aponta-gartner/",
+   "p": [
+    "Segundo a cobertura do TI Inside sobre a pesquisa da Gartner apresentada no IT Symposium/Xpo, em Orlando, **44% dos CEOs entrevistados dizem ter dificuldade de demonstrar retornos financeiros da IA**. A pesquisa ouviu 203 CEOs e executivos seniores entre abril e maio de 2026. **Link não aberto; fato conforme pesquisa interna.**",
+    "**O que a pesquisa indica:** ainda segundo a pesquisa interna, 63% dos entrevistados apontam a reformulação do modelo operacional como uma das principais medidas para destravar retorno financeiro da IA até 2027.",
+    "**O que ficou sem resposta:** a cobertura que consultamos não detalha como as empresas medem esse retorno hoje, nem qual é o ponto de comparação usado.",
+    "**Leitura nossa (não é afirmação da Gartner):** é difícil provar retorno de algo sem o número de antes. Se ninguém registrou tempo de ciclo, retrabalho ou custo por transação antes da IA entrar no processo, o depois não tem com o que ser comparado.",
+    "**Para aplicar:** o exercício desta edição registra o antes de um processo que recebeu IA."
+   ],
+   "tag": "INDICADORES",
+   "tldr": "44% dos CEOs ouvidos pela Gartner dizem ter dificuldade de provar o retorno financeiro da IA.",
+   "curto": "44% dos CEOs sem retorno comprovado",
+   "capa": "Sem o número de antes, o retorno da IA não se prova"
+  },
+  {
+   "h": "Magna: margem sobe e a empresa credita à excelência operacional 🏭",
+   "date": "30 de outubro de 2026",
+   "src": "GlobeNewswire (comunicado da Magna International)",
+   "url": "https://www.globenewswire.com/news-release/2026/10/30/3392067/0/en/magna-announces-strong-third-quarter-results.html",
+   "p": [
+    "No comunicado de resultados do terceiro trimestre, a Magna, fabricante de autopeças, informou lucro líquido de **US$ 383 milhões, contra US$ 305 milhões** no mesmo período do ano anterior, e margem operacional ajustada de **6,8%, contra 5,9%**. O comunicado credita parte da melhora a iniciativas de excelência operacional e a reestruturação anterior. **Link não aberto; fato conforme pesquisa interna.** Segundo a pesquisa interna, o comunicado não cita IA.",
+    "**Leitura crítica (conteúdo da própria empresa):** é um comunicado de resultados, escrito para investidores. Ele afirma a causa da melhora, mas não mostra quais iniciativas, em quais plantas, nem quanto cada uma contribuiu.",
+    "**Leitura nossa (não é afirmação da Magna):** o contraste com a notícia anterior é útil. Aqui existe um número de margem antes e depois e uma causa atribuída ao processo. Falta o detalhamento que permitiria replicar, mas o formato de afirmação, com indicador, é o que a maioria dos anúncios da semana não trouxe.",
+    "**Por que importa para processos:** quando o ganho aparece em margem, ele precisa ser rastreável até uma iniciativa. É esse vínculo que transforma melhoria contínua em argumento de investimento."
+   ],
+   "tag": "LEAN",
+   "tldr": "A Magna reportou margem ajustada de 6,8% (era 5,9%) e creditou a melhora a iniciativas de excelência operacional.",
+   "curto": "margem de 5,9% para 6,8%, atribuída a processo",
+   "capa": "Ganho de margem rastreável até uma iniciativa de processo"
+  },
+  {
+   "h": "Critical Software: corte de vagas fala de função, não de processo 💻",
+   "date": "30 de outubro de 2026",
+   "src": "ECO (citando o Expresso)",
+   "url": "https://eco.sapo.pt/2026/10/30/critical-software-de-coimbra-corta-cerca-de-200-empregos-por-causa-da-inteligencia-artificial/",
+   "p": [
+    "O ECO, citando o semanário Expresso, noticiou em 30 de outubro que a Critical Software, de Coimbra, estaria cortando **cerca de 200 vagas, 13% do quadro**, em razão do avanço da IA. **Link não aberto; fato conforme pesquisa interna.**",
+    "**O que há de divergente:** segundo a pesquisa interna, a agência Lusa, no mesmo dia, trouxe versão mais cautelosa: um cofundador confirmou apenas que algumas pessoas foram desligadas, sem dar quantidade, e disse que a empresa já não está reduzindo postos. O número de 200 vem só do Expresso via ECO e não está confirmado pela empresa.",
+    "**O que a empresa teria dito:** de acordo com a pesquisa interna, o CEO disse que há funções que deixam de fazer sentido com a IA, que algumas desaparecem, outras se transformam e outras são criadas.",
+    "**Leitura nossa (não é afirmação da empresa):** essa é uma frase sobre cargo. Ela não diz qual etapa do fluxo de trabalho muda. Mapear o processo é o que mostra se a vaga que sobra precisa de gente nova ou só herda o mesmo desperdício com outro nome."
+   ],
+   "tag": "PROCESSOS",
+   "tldr": "Imprensa portuguesa fala em cerca de 200 vagas a menos na Critical Software por causa da IA; a empresa não confirma o número.",
+   "curto": "cerca de 200 vagas (número não confirmado)",
+   "capa": "Falar de função não substitui mapear o processo"
+  }
+ ],
+ "radar": [
+  [
+   "Indicadores",
+   "o CEO da PayPal disse na teleconferência de resultados (27 de outubro) que partes da empresa tinham oito ou nove camadas de gestão e que três foram removidas, com meta de economia de ao menos US$ 1,5 bilhão em 2 a 3 anos, segundo a pesquisa interna. Link não aberto.",
+   "https://www.benzinga.com/news/26/10/62618558/paypal-holdings-q3-2026-earnings-call-transcript"
+  ],
+  [
+   "IA e processos",
+   "a Microsoft ofereceu saída voluntária a cerca de 60 mil funcionários, com prazo até 1º de dezembro, e disse que o programa não substitui demissões futuras (CNBC, 26 de outubro). Link não aberto; fato conforme pesquisa interna.",
+   "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
+  ],
+  [
+   "Capacidade",
+   "a Amazon confirmou o corte de 250 vagas na divisão de dispositivos após uma série de lançamentos (American Bazaar, 28 de outubro). Link não aberto; fato conforme pesquisa interna.",
+   "https://americanbazaaronline.com/2026/10/28/amazon-cuts-250-jobs-in-devices-unit-after-flurry-of-new-product-launches-490976/"
+  ],
+  [
+   "Lean",
+   "o curso online \"Managing on Purpose with Hoshin Kanri\", do Lean Enterprise Institute, começa em 6 de novembro, com seis encontros às sextas. Informação da edição anterior, não reconfirmada na página oficial.",
+   "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/"
+  ]
+ ],
+ "aplique": {
+  "title": "Registre o antes de um processo que recebeu IA",
+  "problema": "a empresa colocou IA em um processo, todo mundo tem a impressão de que melhorou, mas ninguém tem o número de antes para provar.",
+  "passos": [
+    "Escolha UM processo que usa (ou vai usar) IA, por exemplo triagem de e-mails, resposta a clientes ou conciliação de relatórios.",
+    "Defina 3 indicadores simples: tempo para concluir uma unidade de trabalho, percentual de retrabalho e volume por semana. Registre o valor atual de 10 casos reais, marcando estimativas como estimativa.",
+    "Faça o mesmo registro com 10 casos novos depois de duas semanas de uso da IA e compare, anotando qualquer mudança no processo feita no período.",
+    "Se não houve melhoria em nenhum dos três, ajuste o processo, não só a ferramenta, e meça de novo."
+  ],
+  "ferramenta": "uma planilha com colunas: Caso / Data de entrada / Data de conclusão / Houve retrabalho? (sim/não) / Observação.",
+  "duracao": "30 minutos para o levantamento inicial.",
+  "resultado": "um número de antes para cada indicador, que permite afirmar com dados se a IA ajudou ou não."
+ },
+ "pausa": {
+  "cenario": "seu gestor pergunta se a ferramenta de IA instalada há dois meses \"está dando retorno\" e você não registrou nenhum indicador antes do início.",
+  "pergunta": "o que você faz primeiro?",
+  "opts": [
+   [
+    "A",
+    "Responder que sim, porque o time diz que está mais rápido.",
+    "Percepção do time"
+   ],
+   [
+    "B",
+    "Reconstruir o antes com 10 casos antigos (datas de entrada e conclusão) e medir 10 casos atuais.",
+    "Reconstruir o antes"
+   ],
+   [
+    "C",
+    "Pedir mais tempo para a ferramenta amadurecer.",
+    "Esperar mais"
+   ]
+  ],
+  "palpite": "B. Casos antigos costumam ter data de entrada e de conclusão em e-mail ou sistema, o que permite reconstruir um antes aproximado. A é opinião; C adia a medição sem criar o número."
+ },
+ "ferramenta": {
+  "nome": "diagrams.net (draw.io)",
+  "url": "https://app.diagrams.net/",
+  "oque": "editor de diagramas gratuito no navegador, sem obrigatoriedade de cadastro, com formas para fluxograma e BPMN.",
+  "problema": "processos que existem só na cabeça de quem executa, sem um desenho que permita apontar onde a IA entra e onde ficam as esperas.",
+  "uso": "desenhar o fluxo atual em 6 a 8 caixas, marcar o ponto onde a IA atua e anotar ao lado o tempo medido no exercício.",
+  "limitacao": "desenha, mas não mede tempos nem executa o processo; a medição continua na planilha.",
+  "exemplo": "um analista desenha o fluxo de triagem de e-mails em 7 caixas, marca a etapa assistida por IA e anota o tempo médio antes e depois ao lado de cada caixa."
+ },
+ "salvar": [
+  [
+   "Ferramenta gratuita",
+   "diagrams.net",
+   "https://app.diagrams.net/",
+   "para desenhar o fluxo do exercício desta edição e marcar onde a IA atua."
+  ],
+  [
+   "Curso",
+   "Managing on Purpose with Hoshin Kanri (LEI)",
+   "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/",
+   "curso online do Lean Enterprise Institute sobre desdobramento de metas, a partir de 6 de novembro (data não reconfirmada)."
+  ],
+  [
+   "Pesquisa",
+   "Cobertura da pesquisa da Gartner com CEOs",
+   "https://tiinside.com.br/27/10/2026/44-dos-ceos-tem-dificuldade-para-demonstrar-retornos-financeiros-da-ia-aponta-gartner/",
+   "para ver o dado de 44% e comparar com o retorno de IA na sua própria empresa."
+  ]
+ ],
+ "pergunta": "Em algum processo da sua empresa que recebeu IA, existe hoje o número de antes? Se não, qual indicador você registraria primeiro?",
+ "fechamento": "Se algo aqui foi útil, responda com sua opinião ou encaminhe para alguém que está tentando provar o retorno de uma ferramenta de IA agora. E se tem um tema, ferramenta ou tipo de vaga que você quer ver por aqui, é só contar.",
+ "pend": [
+  "Notícias vêm da pesquisa diária do projeto (Invicta-OS, 26/10 a 01/11): Gartner (TI Inside), Magna (GlobeNewswire), Critical Software (ECO), PayPal (Benzinga), Microsoft (CNBC), Amazon (American Bazaar) e evento da edição anterior.",
+  "Nesta execução a rede bloqueou os domínios das fontes (WebFetch: DNS não resolve; curl: 403 do proxy), então NENHUM link foi aberto; link não aberto; fato conforme pesquisa interna. Nenhuma citação literal foi usada.",
+  "Gartner: percentuais (44% e 63%) e amostra (203 CEOs) vêm só da pesquisa interna. Magna: valores de lucro e margem vêm só da pesquisa interna; a atribuição à excelência operacional também. Critical Software: o número de 200 vagas é só do Expresso via ECO; a Lusa traz versão cautelosa.",
+  "PayPal, Microsoft e Amazon (radar): fatos conforme pesquisa interna, links não abertos.",
+  "Ferramenta (diagrams.net): a resposta HTTP 200 não pôde ser conferida (curl recebeu 403 do proxy). Radar: a data do curso Hoshin Kanri (6/11) vem da edição anterior e não foi reconfirmada na página oficial.",
+  "Vagas: a coleta falhou (Gupy, Vagas.com e LinkedIn bloquearam o acesso: 0 vagas), por isso vagas.json está vazio e a edição não tem seção de vagas. O vagas.json anterior tinha mais de 7 dias.",
+  "Esta semana não houve notícia datada de BPM ou Lean (exceto o comunicado da Magna, de conteúdo da própria empresa) na pesquisa interna; os arquivos de 31/10 e 01/11 não trouxeram itens de negócio.",
+  "O tema 'camadas de gestão' (edição 06) foi evitado como destaque; PayPal ficou no radar. As leituras marcadas como 'leitura nossa' são interpretação editorial. A versão de e-mail não contém imagens. Não existe link público de inscrição."
+ ]
+}
