@@ -13,7 +13,7 @@
   "Exercício de 30 minutos: registre o antes de um processo que recebeu IA, para provar o depois"
  ],
  "SUBJECT_SEND": "44% dos CEOs não provam o retorno da IA",
- "abertura": "Entre 26 de outubro e 1º de novembro, três notícias trataram da mesma pergunta por ângulos diferentes: quem consegue provar o que mudou? A Gartner perguntou a 203 CEOs sobre o retorno financeiro da IA e 44% disseram ter dificuldade de demonstrá-lo. A Magna creditou a melhora de margem a iniciativas de excelência operacional, sem citar IA. Já uma empresa de software de Coimbra falou em funções que deixam de fazer sentido, mas não em qual etapa do trabalho muda. Nesta edição: o que cada uma disse, o que ficou sem resposta, um radar com quatro itens e um exercício de 30 minutos para registrar o antes de um processo que recebeu IA. Vagas: nesta semana a coleta automática não conseguiu acessar os portais, então não há lista de vagas nesta edição.",
+ "abertura": "Entre 26 de outubro e 1º de novembro, três notícias trataram da mesma pergunta por ângulos diferentes: quem consegue provar o que mudou? A Gartner perguntou a 203 CEOs sobre o retorno financeiro da IA e 44% disseram ter dificuldade de demonstrá-lo. A Magna creditou a melhora de margem a iniciativas de excelência operacional, sem citar IA. Já uma empresa de software de Coimbra falou em funções que deixam de fazer sentido, mas não em qual etapa do trabalho muda. Nesta edição: o que cada uma disse, o que ficou sem resposta, um radar com quatro itens e um exercício de 30 minutos para registrar o antes de um processo que recebeu IA. Vagas: 12 oportunidades de processos, excelência operacional e melhoria contínua, coletadas esta semana no Gupy, Vagas.com e LinkedIn.",
  "news": [
   {
    "h": "Gartner: 44% dos CEOs têm dificuldade de provar o retorno da IA 📊",
@@ -21,8 +21,8 @@
    "src": "TI Inside (sobre o 2027 Gartner CEO Survey)",
    "url": "https://tiinside.com.br/27/10/2026/44-dos-ceos-tem-dificuldade-para-demonstrar-retornos-financeiros-da-ia-aponta-gartner/",
    "p": [
-    "Segundo a cobertura do TI Inside sobre a pesquisa da Gartner apresentada no IT Symposium/Xpo, em Orlando, **44% dos CEOs entrevistados dizem ter dificuldade de demonstrar retornos financeiros da IA**. A pesquisa ouviu 203 CEOs e executivos seniores entre abril e maio de 2026. **Link não aberto; fato conforme pesquisa interna.**",
-    "**O que a pesquisa indica:** ainda segundo a pesquisa interna, 63% dos entrevistados apontam a reformulação do modelo operacional como uma das principais medidas para destravar retorno financeiro da IA até 2027.",
+    "Segundo a cobertura do TI Inside, de 27 de outubro, sobre a pesquisa 2027 Gartner CEO Survey, **44% dos CEOs entrevistados dizem ter dificuldade de demonstrar retornos financeiros da IA**. A pesquisa ouviu 203 CEOs e executivos seniores de negócios em todo o mundo, entre abril e maio de 2026.",
+    "**O que a pesquisa indica:** 63% dos entrevistados citam a reformulação radical do modelo operacional como uma das principais medidas para acelerar retornos financeiros tangíveis da IA até 2027. O vice-presidente analista David Furlonger, da Gartner, afirmou que o problema \"não será resolvido simplesmente adicionando mais IA às formas de trabalho existentes\".",
     "**O que ficou sem resposta:** a cobertura que consultamos não detalha como as empresas medem esse retorno hoje, nem qual é o ponto de comparação usado.",
     "**Leitura nossa (não é afirmação da Gartner):** é difícil provar retorno de algo sem o número de antes. Se ninguém registrou tempo de ciclo, retrabalho ou custo por transação antes da IA entrar no processo, o depois não tem com o que ser comparado.",
     "**Para aplicar:** o exercício desta edição registra o antes de um processo que recebeu IA."
@@ -54,9 +54,9 @@
    "src": "ECO (citando o Expresso)",
    "url": "https://eco.sapo.pt/2026/10/30/critical-software-de-coimbra-corta-cerca-de-200-empregos-por-causa-da-inteligencia-artificial/",
    "p": [
-    "O ECO, citando o semanário Expresso, noticiou em 30 de outubro que a Critical Software, de Coimbra, estaria cortando **cerca de 200 vagas, 13% do quadro**, em razão do avanço da IA. **Link não aberto; fato conforme pesquisa interna.**",
-    "**O que há de divergente:** segundo a pesquisa interna, a agência Lusa, no mesmo dia, trouxe versão mais cautelosa: um cofundador confirmou apenas que algumas pessoas foram desligadas, sem dar quantidade, e disse que a empresa já não está reduzindo postos. O número de 200 vem só do Expresso via ECO e não está confirmado pela empresa.",
-    "**O que a empresa teria dito:** de acordo com a pesquisa interna, o CEO disse que há funções que deixam de fazer sentido com a IA, que algumas desaparecem, outras se transformam e outras são criadas.",
+    "O ECO, citando o semanário Expresso, noticiou em 30 de outubro que a Critical Software, de Coimbra, vai cortar **cerca de 200 vagas, 13% do quadro** (de cerca de 1.500 para 1.300 pessoas até o fim do ano), em razão do avanço da IA. A reportagem original do Expresso é de acesso pago.",
+    "**O que há de divergente:** segundo a pesquisa interna (não confirmado na página do ECO), a agência Lusa, no mesmo dia, trouxe versão mais cautelosa: um cofundador confirmou apenas que algumas pessoas foram desligadas, sem dar quantidade. O número de 200 vem do Expresso via ECO e não foi confirmado pela empresa em fonte que abrimos. **Lusa: link não aberto; fato conforme pesquisa interna.**",
+    "**O que a empresa teria dito:** segundo o ECO, o presidente executivo João Carreira disse que, com a IA, \"há funções que deixam de fazer sentido\", que algumas desaparecem, outras se transformam e outras são criadas.",
     "**Leitura nossa (não é afirmação da empresa):** essa é uma frase sobre cargo. Ela não diz qual etapa do fluxo de trabalho muda. Mapear o processo é o que mostra se a vaga que sobra precisa de gente nova ou só herda o mesmo desperdício com outro nome."
    ],
    "tag": "PROCESSOS",
@@ -83,7 +83,7 @@
   ],
   [
    "Lean",
-   "o curso online \"Managing on Purpose with Hoshin Kanri\", do Lean Enterprise Institute, começa em 6 de novembro, com seis encontros às sextas. Informação da edição anterior, não reconfirmada na página oficial.",
+   "o curso online \"Managing on Purpose with Hoshin Kanri\", do Lean Enterprise Institute, começa em 6 de novembro, com seis encontros às sextas, das 12h às 14h30 (horário de Nova York), até 18 de dezembro. Preço regular informado na página: US$ 1.499.",
    "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/"
   ]
  ],
@@ -91,10 +91,10 @@
   "title": "Registre o antes de um processo que recebeu IA",
   "problema": "a empresa colocou IA em um processo, todo mundo tem a impressão de que melhorou, mas ninguém tem o número de antes para provar.",
   "passos": [
-    "Escolha UM processo que usa (ou vai usar) IA, por exemplo triagem de e-mails, resposta a clientes ou conciliação de relatórios.",
-    "Defina 3 indicadores simples: tempo para concluir uma unidade de trabalho, percentual de retrabalho e volume por semana. Registre o valor atual de 10 casos reais, marcando estimativas como estimativa.",
-    "Faça o mesmo registro com 10 casos novos depois de duas semanas de uso da IA e compare, anotando qualquer mudança no processo feita no período.",
-    "Se não houve melhoria em nenhum dos três, ajuste o processo, não só a ferramenta, e meça de novo."
+   "Escolha UM processo que usa (ou vai usar) IA, por exemplo triagem de e-mails, resposta a clientes ou conciliação de relatórios.",
+   "Defina 3 indicadores simples: tempo para concluir uma unidade de trabalho, percentual de retrabalho e volume por semana. Registre o valor atual de 10 casos reais, marcando estimativas como estimativa.",
+   "Faça o mesmo registro com 10 casos novos depois de duas semanas de uso da IA e compare, anotando qualquer mudança no processo feita no período.",
+   "Se não houve melhoria em nenhum dos três, ajuste o processo, não só a ferramenta, e meça de novo."
   ],
   "ferramenta": "uma planilha com colunas: Caso / Data de entrada / Data de conclusão / Houve retrabalho? (sim/não) / Observação.",
   "duracao": "30 minutos para o levantamento inicial.",
@@ -142,7 +142,7 @@
    "Curso",
    "Managing on Purpose with Hoshin Kanri (LEI)",
    "https://www.lean.org/events-training/events/managing-on-purpose-with-hoshin-kanri/",
-   "curso online do Lean Enterprise Institute sobre desdobramento de metas, a partir de 6 de novembro (data não reconfirmada)."
+   "curso online do Lean Enterprise Institute sobre desdobramento de metas, a partir de 6 de novembro (6 encontros, preço regular US$ 1.499)."
   ],
   [
    "Pesquisa",
@@ -154,13 +154,12 @@
  "pergunta": "Em algum processo da sua empresa que recebeu IA, existe hoje o número de antes? Se não, qual indicador você registraria primeiro?",
  "fechamento": "Se algo aqui foi útil, responda com sua opinião ou encaminhe para alguém que está tentando provar o retorno de uma ferramenta de IA agora. E se tem um tema, ferramenta ou tipo de vaga que você quer ver por aqui, é só contar.",
  "pend": [
-  "Notícias vêm da pesquisa diária do projeto (Invicta-OS, 26/10 a 01/11): Gartner (TI Inside), Magna (GlobeNewswire), Critical Software (ECO), PayPal (Benzinga), Microsoft (CNBC), Amazon (American Bazaar) e evento da edição anterior.",
-  "Nesta execução a rede bloqueou os domínios das fontes (WebFetch: DNS não resolve; curl: 403 do proxy), então NENHUM link foi aberto; link não aberto; fato conforme pesquisa interna. Nenhuma citação literal foi usada.",
-  "Gartner: percentuais (44% e 63%) e amostra (203 CEOs) vêm só da pesquisa interna. Magna: valores de lucro e margem vêm só da pesquisa interna; a atribuição à excelência operacional também. Critical Software: o número de 200 vagas é só do Expresso via ECO; a Lusa traz versão cautelosa.",
+  "Notícias vêm da pesquisa diária do projeto (Invicta-OS, 26/10 a 01/11). Conferência feita em 03/11 na máquina do Alan: Gartner/TI Inside, ECO e página do curso Hoshin Kanri foram abertos e batem com o texto; a ferramenta diagrams.net respondeu HTTP 200.",
+  "Magna: a página do GlobeNewswire devolveu 403, então lucro (US$ 383 mi vs 305 mi), margem (6,8% vs 5,9%) e a atribuição à excelência operacional seguem conforme pesquisa interna; link não aberto.",
+  "Critical Software: ECO confirma 200 vagas, 13% do quadro e a fala do presidente executivo; a versão da Lusa (cofundador sem dar número) vem só da pesquisa interna e não foi aberta.",
   "PayPal, Microsoft e Amazon (radar): fatos conforme pesquisa interna, links não abertos.",
-  "Ferramenta (diagrams.net): a resposta HTTP 200 não pôde ser conferida (curl recebeu 403 do proxy). Radar: a data do curso Hoshin Kanri (6/11) vem da edição anterior e não foi reconfirmada na página oficial.",
-  "Vagas: a coleta falhou (Gupy, Vagas.com e LinkedIn bloquearam o acesso: 0 vagas), por isso vagas.json está vazio e a edição não tem seção de vagas. O vagas.json anterior tinha mais de 7 dias.",
-  "Esta semana não houve notícia datada de BPM ou Lean (exceto o comunicado da Magna, de conteúdo da própria empresa) na pesquisa interna; os arquivos de 31/10 e 01/11 não trouxeram itens de negócio.",
-  "O tema 'camadas de gestão' (edição 06) foi evitado como destaque; PayPal ficou no radar. As leituras marcadas como 'leitura nossa' são interpretação editorial. A versão de e-mail não contém imagens. Não existe link público de inscrição."
+  "Vagas: 12 coletadas em 03/11 (LinkedIn 27 candidatas, Gupy 25, Vagas.com 4 antes do filtro). Conferir se alguma já foi encerrada antes do envio.",
+  "Esta semana não houve notícia datada de BPM ou Lean na pesquisa interna, exceto o comunicado da Magna (conteúdo da própria empresa) e o curso do LEI.",
+  "O tema 'camadas de gestão' (edição 06) foi evitado como destaque. As leituras marcadas como 'leitura nossa' são interpretação editorial. Não existe link público de inscrição."
  ]
 }
