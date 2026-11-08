@@ -55,7 +55,7 @@
    "src": "GitHub (webmilmind1/deskcrew-claude-plugin)",
    "url": "https://github.com/webmilmind1/deskcrew-claude-plugin",
    "p": [
-    "O repositório `deskcrew-claude-plugin`, gratuito e com licença MIT, é um servidor MCP de helpdesk para o Claude Code. Ele lê tickets, redige respostas, consulta a base de conhecimento e funciona no modelo \"draft-first\": a ferramenta de resposta salva um rascunho para uma pessoa aprovar, sem enviar nada.",
+    "O repositório deskcrew-claude-plugin, gratuito e com licença MIT, é um servidor MCP de helpdesk para o Claude Code. Ele lê tickets, redige respostas, consulta a base de conhecimento e funciona no modelo \"draft-first\": a ferramenta de resposta salva um rascunho para uma pessoa aprovar, sem enviar nada.",
     "**O que a página diz:** as ferramentas de envio, resolução e atribuição ficam bloqueadas por padrão e só um administrador do workspace as libera para cada credencial. Uma credencial nova não envia nada ao cliente até essa liberação.",
     "**O que ficou sem resposta:** a página não lista plataformas de helpdesk de terceiros, não traz data do último commit nem dado de uso ou de tempo economizado. O repositório tem apenas 4 commits.",
     "**Leitura crítica (projeto de terceiros, pequeno):** o desenho de aprovação é claro, mas é um projeto novo e sem histórico público de uso. Teste em ambiente separado antes de ligar em um atendimento real.",
