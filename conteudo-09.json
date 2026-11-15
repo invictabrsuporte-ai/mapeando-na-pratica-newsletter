@@ -1,0 +1,167 @@
+{
+ "numero": "09",
+ "data_iso": "2026-11-17",
+ "data_pt": "17 de novembro de 2026",
+ "tagline_header": "Antes de pôr IA no processo, mapeie onde ele espera, refaz e passa de mão em mão.",
+ "subjects": [
+  "Curative: 23 mil contratos, com aprovação em camadas",
+  "Os 5 desperdícios do processo, agora com IA",
+  "IA em contratos: quem aprova o que passa do padrão?"
+ ],
+ "preheaders": [
+  "Um caso real com números, um plugin que documenta processo e um pacote para fábrica.",
+  "Exercício de 40 minutos: ache espera, retrabalho e passagem de mão em um processo seu"
+ ],
+ "SUBJECT_SEND": "23 mil contratos com agente de IA: quem aprova o quê?",
+ "abertura": "Entre 9 e 15 de novembro, três itens mostraram o mesmo ponto por ângulos diferentes: IA em processo funciona melhor quando o fluxo já diz o que ela decide sozinha e o que sobe para uma pessoa. A Curative, empresa de saúde dos Estados Unidos, contou como um agente de IA conduz contratos com prestadores, com revisão em camadas. A Anthropic publicou um plugin gratuito de operações que documenta processos e procura desperdício. E lançou um pacote para indústria com 17 skills. Nesta edição: o que cada fonte diz, o que ficou sem resposta, um radar com quatro itens e um exercício de 40 minutos para achar espera, retrabalho e passagem de mão em um processo seu. Vagas: esta semana a coleta automática não conseguiu acessar Gupy, Vagas.com e LinkedIn, então não há vagas nesta edição.",
+ "news": [
+  {
+   "h": "Curative fecha contratos com prestadores por agente de IA, com revisão em camadas 📑",
+   "date": "10 de novembro de 2026",
+   "src": "Claude (Anthropic), caso de cliente",
+   "url": "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude",
+   "p": [
+    "Em 10 de novembro, a Anthropic publicou o caso da Curative, empresa de saúde dos Estados Unidos que usa um agente de IA, chamado Gwen, para conduzir o contrato com cada prestador, do primeiro contato até a assinatura. Segundo o texto, a empresa assinou **2.100 contratos em 2025**; hoje fecha entre **2.000 e 2.400 por semana** e já tem **23.000 contratos de prestadores assinados**. O tempo de resposta a disputas de sinistro caiu de cerca de **90 dias para menos de 30 minutos**.",
+    "**O que o texto diz sobre o desenho do processo:** quando o agente quer sair do modelo padrão de taxas, outro agente decide. Pedidos fora do padrão vão para o CEO. Antes de cada envio, um terceiro modelo analisa a comunicação e devolve a mensagem com o motivo se ela for bloqueada. Negociações com prestadores que já demonstraram interesse são assumidas pela equipe por telefone. Segundo o artigo, a empresa começou exigindo aprovação humana para qualquer taxa acima do modelo e afrouxou os limites aos poucos. Um dos executivos afirma que \"having a second agent review rates worked better than just giving Gwen more authority\".",
+    "**O que ficou sem resposta:** o texto não informa o custo da solução, a taxa de erro medida nem como os 23.000 contratos se comparam em qualidade aos assinados antes.",
+    "**Leitura crítica (conteúdo do fornecedor):** é um caso publicado pela Anthropic, com números fornecidos pela própria empresa cliente e sem auditoria externa.",
+    "**Leitura nossa (não é afirmação da Anthropic):** o ganho vem menos da IA e mais do desenho: limite de alçada, revisor independente, filtro antes do envio e passagem para pessoa quando a relação importa. É o mesmo raciocínio de uma alçada de aprovação bem definida em qualquer processo de compras ou contratos."
+   ],
+   "tag": "IA E PROCESSOS",
+   "tldr": "Curative usa agente de IA para contratos com prestadores, com revisor de taxas, aprovação do CEO e filtro antes do envio; números são da própria empresa.",
+   "curto": "agente de contratos com alçada em camadas",
+   "capa": "23 mil contratos: o agente decide até onde a alçada deixa"
+  },
+  {
+   "h": "Plugin oficial de operações documenta processo e procura desperdício 🧭",
+   "date": "Semana de 9 a 15 de novembro de 2026 (a página não mostra data)",
+   "src": "GitHub (anthropics/knowledge-work-plugins)",
+   "url": "https://github.com/anthropics/knowledge-work-plugins/tree/main/operations",
+   "p": [
+    "O repositório oficial da Anthropic tem um plugin chamado **operations**, com o comando `/process-doc` e a skill `process-optimization`. A página mostra como instalar com dois comandos e diz que o plugin foi feito principalmente para o Cowork, o aplicativo desktop da Anthropic, mas também funciona no Claude Code. Os comandos e skills funcionam sem integrações e ganham contexto quando conectados a ferramentas como gerenciador de projetos e base de conhecimento.",
+    "**O que a skill de otimização diz:** o roteiro tem quatro passos (mapear o estado atual, identificar desperdício, desenhar o estado futuro, medir o impacto) e cinco categorias de desperdício: espera (fila e aprovação), retrabalho, passagem de mão, excesso de processamento e trabalho manual. O termo \"Lean\" não aparece na página. O comando de documentação gera propósito, escopo, matriz RACI, fluxo, passos, tabela de exceções e métricas. O guia diz que a informação mais valiosa a registrar é o padrão \"normalmente fazemos X, mas às vezes Y\".",
+    "**O que ficou sem resposta:** a página não traz caso de empresa usando o plugin, nem número de ganho, nem a licença (verifique o arquivo LICENSE do repositório).",
+    "**Leitura crítica (conteúdo do fornecedor):** é descrição de função, não resultado. O que o plugin gera depende do que você contar sobre o processo.",
+    "**Leitura nossa (não é afirmação da Anthropic):** as cinco categorias lembram a lógica de desperdícios do Lean. Servem como roteiro de perguntas, mas o diagnóstico só vale se for revisado com quem executa o processo no dia a dia."
+   ],
+   "tag": "LEAN",
+   "tldr": "Plugin oficial 'operations' documenta processo (RACI, fluxo, exceções) e procura cinco tipos de desperdício; sem caso real nem número de ganho.",
+   "curto": "documentar processo e achar 5 desperdícios",
+   "capa": "Cinco desperdícios para procurar antes de automatizar"
+  },
+  {
+   "h": "Claude for Manufacturing: 17 skills para orçamento, inspeção e parada de máquina 🏭",
+   "date": "12 de novembro de 2026",
+   "src": "Claude (Anthropic)",
+   "url": "https://claude.com/resources/articles/claude-for-manufacturing",
+   "p": [
+    "Em 12 de novembro, a Anthropic lançou um plugin para indústria, para os planos Team e Enterprise. Segundo o texto, as **17 skills** cobrem vendas, qualidade, operações, cadeia de suprimentos, projeto e configuração, com **quatro conectores**: Autodesk Fusion, Infor, Microsoft 365 e Oracle NetSuite.",
+    "**O que o texto diz:** os exemplos de uso são orçar um novo trabalho (ler o pedido do cliente, comparar custos de trabalhos parecidos e rascunhar o orçamento), investigar uma inspeção reprovada (documentar a falha, consultar relatórios anteriores e rascunhar ação corretiva) e diagnosticar uma parada de máquina (cruzar dados de sensores, notas de reparo, fotos e manual para ranquear causas prováveis). O artigo afirma que o plugin não opera equipamentos e que as skills terminam com revisão de uma pessoa. Cita ainda uma pesquisa de 2025 do Manufacturing Leadership Council: 79% dos fabricantes dizem inserir dados manualmente.",
+    "**O que ficou sem resposta:** o texto não traz tempo economizado, cliente nomeado nem resultado medido. O dado de 79% é de terceiros, não uma medição da Anthropic.",
+    "**Leitura crítica (conteúdo do fornecedor):** é material de lançamento. Mostra o que o pacote se propõe a fazer, não o que entregou em uma fábrica.",
+    "**Leitura nossa (não é afirmação da Anthropic):** os três fluxos citados (orçamento, não conformidade, causa de parada) são justamente os que costumam depender de busca em histórico. Se o histórico está disperso ou mal registrado, a IA herda a bagunça."
+   ],
+   "tag": "AUTOMAÇÃO",
+   "tldr": "Pacote para indústria com 17 skills e 4 conectores cobre orçamento, inspeção reprovada e parada de máquina; sem dado de resultado.",
+   "curto": "pacote para fábrica: 17 skills, sem resultado medido",
+   "capa": "IA na fábrica herda o histórico que a fábrica tem"
+  }
+ ],
+ "radar": [
+  [
+   "Reuniões",
+   "o Claude Meetings entrou em beta em 12 de novembro, nos planos Team e Enterprise, só no Google Meet. Entra na chamada como participante visível, gera notas e itens de ação, guarda transcrição e resumo (não o áudio) e não está disponível para organizações com retenção zero de dados.",
+   "https://claude.com/resources/articles/claude-meetings"
+  ],
+  [
+   "Planilhas e dados",
+   "em 10 de novembro, a Anthropic apresentou Claude Sheets e Whiteboards (beta) e Claude Data (disponibilidade geral, com consultas certificadas em beta). Nos planos Enterprise, Sheets e Whiteboards vêm desativados por padrão e o Data é ativado por padrão em 20 de novembro de 2026.",
+   "https://claude.com/resources/articles/sheets-whiteboards-data"
+  ],
+  [
+   "Segurança de permissões",
+   "as notas da versão 2.1.323 do Claude Code (12 de novembro) listam correções em que alguns comandos rodavam sem pedir permissão e em que regras de permissão não valiam em certos casos. Quem usa a ferramenta com regras de permissão deve atualizar. A página mostra só o dia e o mês, sem o ano.",
+   "https://github.com/anthropics/claude-code/releases/tag/v2.1.323"
+  ],
+  [
+   "Atendimento",
+   "a skill ticket-triage, do mesmo repositório oficial de plugins, organiza chamados em nove categorias e quatro níveis de prioridade, com prazos de exemplo, segundo a pesquisa interna. Link não aberto; fato conforme pesquisa interna.",
+   "https://github.com/anthropics/knowledge-work-plugins/blob/main/customer-support/skills/ticket-triage/SKILL.md"
+  ]
+ ],
+ "aplique": {
+  "title": "Ache espera, retrabalho e passagem de mão em um processo",
+  "problema": "um processo que todo mundo acha lento, mas ninguém sabe dizer em qual etapa o tempo se perde, e a ideia de pôr IA nele aparece antes do diagnóstico.",
+  "passos": [
+    "Escolha UM processo curto (por exemplo, aprovação de contrato, orçamento ou tratamento de chamado) e liste as etapas na ordem em que acontecem hoje, com quem faz cada uma.",
+    "Ao lado de cada etapa, marque com uma letra: E (espera por fila ou aprovação), R (retrabalho), P (passagem de mão), X (passo que não agrega valor) ou M (trabalho manual repetitivo). Uma etapa pode ter mais de uma marca.",
+    "Pergunte a quem executa o processo qual é a exceção mais comum: aquilo que \"normalmente fazemos X, mas às vezes Y\". Registre na coluna de exceções.",
+    "Conte as marcas. A coluna com mais marcas é a primeira candidata a mudar, e só depois vale decidir se IA, regra de alçada ou simplesmente eliminar a etapa resolve melhor."
+  ],
+  "ferramenta": "uma planilha com colunas: Etapa / Quem faz / Marca (E, R, P, X, M) / Exceção mais comum / Tempo estimado.",
+  "duracao": "40 minutos para um processo de até 10 etapas, com uma pessoa que executa.",
+  "resultado": "um mapa de uma página com as etapas marcadas e a coluna de maior desperdício, antes de qualquer decisão de automação."
+ },
+ "pausa": {
+  "cenario": "o processo de aprovação de contratos leva 12 dias, e a diretoria pede um agente de IA para acelerar. Você mapeou e viu que 8 dos 12 dias são fila de aprovação de uma pessoa só.",
+  "pergunta": "o que você faz primeiro?",
+  "opts": [
+   [
+    "A",
+    "Instalar o agente de IA para redigir o contrato mais rápido.",
+    "Instalar o agente"
+   ],
+   [
+    "B",
+    "Redefinir a alçada: o que pode ser aprovado por mais de uma pessoa e o que realmente exige essa aprovação.",
+    "Redefinir a alçada"
+   ],
+   [
+    "C",
+    "Pedir para a pessoa aprovar mais rápido.",
+    "Pedir mais rapidez"
+   ]
+  ],
+  "palpite": "B. O gargalo é a fila de aprovação, não a redação. A deixa o gargalo intacto e C depende de esforço individual. Uma alçada bem definida atua na causa."
+ },
+ "ferramenta": {
+  "nome": "operations (plugin oficial do Claude)",
+  "url": "https://github.com/anthropics/knowledge-work-plugins/tree/main/operations",
+  "oque": "plugin do repositório oficial da Anthropic que documenta um processo (fluxo, RACI, passos, exceções e métricas) e tem uma skill para procurar desperdício. Repositório público; a página não informa a licença e a execução exige o Claude (Cowork ou Claude Code), que tem plano próprio.",
+  "problema": "processos que existem só na cabeça de quem executa, sem fluxo, responsáveis e exceções por escrito.",
+  "uso": "descrever em texto o processo do exercício, etapa por etapa, e pedir o documento com RACI e tabela de exceções para revisar com quem executa.",
+  "limitacao": "não há caso real nem número de ganho na página, e a licença não foi conferida. Revise tudo que for gerado com quem faz o processo antes de oficializar.",
+  "exemplo": "um analista de compras descreve as 8 etapas de aprovação de contratos, pede o /process-doc e leva o RACI para a reunião com a área jurídica."
+ },
+ "salvar": [
+  [
+   "Ferramenta",
+   "Plugin operations (knowledge-work-plugins)",
+   "https://github.com/anthropics/knowledge-work-plugins/tree/main/operations",
+   "para documentar o processo do exercício desta edição e procurar desperdício."
+  ],
+  [
+   "Caso de cliente",
+   "Curative: agentes para contratos com prestadores",
+   "https://claude.com/resources/articles/how-curative-is-building-a-national-provider-network-with-agents-on-claude",
+   "para ver como alçada em camadas foi desenhada, com revisor, aprovação e filtro antes do envio."
+  ],
+  [
+   "Lançamento",
+   "Claude for Manufacturing",
+   "https://claude.com/resources/articles/claude-for-manufacturing",
+   "para ver os fluxos de orçamento, inspeção e parada de máquina e os conectores listados."
+  ]
+ ],
+ "pergunta": "No processo mais lento da sua área, qual etapa concentra a espera: fila de aprovação, retrabalho ou passagem entre áreas? E quem seria o dono de mudar essa etapa?",
+ "fechamento": "Se algo aqui foi útil, responda com sua opinião ou encaminhe para alguém que está pensando em pôr IA em um processo agora. E se tem um tema, ferramenta ou tipo de vaga que você quer ver por aqui, é só contar.",
+ "pend": [
+  "Notícias vêm da pesquisa diária do projeto (Invicta-OS, 09/11 a 15/11). Abertos nesta rotina e conferidos: caso Curative, plugin operations (README e skills process-optimization e process-doc), Claude for Manufacturing, Claude Meetings, Sheets/Whiteboards/Data e release v2.1.323 do Claude Code.",
+  "Correção da pesquisa interna: ela dizia 2.000 a 2.400 contratos por ano; a fonte aberta diz 2.100 em 2025 e 2.000 a 2.400 por semana hoje. A edição usa a fonte. A citação da Curative vem do texto aberto.",
+  "Plugin operations: a página não mostra data nem licença (nada confirmado). Link do repositório aberto por WebFetch; curl direto retornou 403 nesta sessão (bloqueio de rede), então o status 200 não foi conferido por curl.",
+  "Release v2.1.323: a página mostra só dia e mês (12 Nov), sem o ano; o ano de 2026 vem da pesquisa interna. Na edição, o radar traz a versão como na página.",
+  "Radar: ticket-triage — link não aberto; fato conforme pesquisa interna.",
+  "Vagas: a coleta falhou (Gupy, Vagas.com e LinkedIn bloqueados pela rede desta sessão, 0 vagas). vagas.json ficou vazio; esta edição sai sem seção de vagas. Se o GitHub Actions coletar vagas até terça, regerar a edição.",
+  "Eventos futuros de BPM/Lean: uma busca na web não achou evento datado de BPM, Lean ou melhoria contínua com inscrições abertas para dezembro de 2026, então o radar não traz evento. A pesquisa interna da semana não teve notícia de BPM em imprensa de negócios (domínios bloqueados). Todas as 'leituras nossas' são interpretação editorial. Não existe link público de inscrição."
+ ]
+}
