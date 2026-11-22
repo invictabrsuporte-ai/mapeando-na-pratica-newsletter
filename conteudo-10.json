@@ -1,0 +1,166 @@
+{
+ "numero": "10",
+ "data_iso": "2026-11-24",
+ "data_pt": "24 de novembro de 2026",
+ "tagline_header": "Antes de automatizar uma rotina, defina quem decide, quem paga e quando ela expira.",
+ "subjects": [
+  "30 de novembro: o prazo do admin que quase passa batido",
+  "Rotina automática de IA: agora dura 30 dias, não 7",
+  "Quem paga o uso de IA quando outra ferramenta chama?"
+ ],
+ "preheaders": [
+  "Prazo de admin no Claude, rotinas agendadas por 30 dias e cobrança vinculada.",
+  "Exercício de 30 minutos: desenhe a rotina que você quer automatizar antes de agendá-la"
+ ],
+ "SUBJECT_SEND": "30 de novembro: o prazo de admin que quase passa batido",
+ "abertura": "Entre 16 e 22 de novembro, três mudanças em ferramentas de IA tocaram no mesmo ponto: automação em processo precisa de dono, regra e prazo. Uma página de ajuda da Anthropic traz uma data de 30 de novembro que decide se plugins continuam funcionando em organizações Team e Enterprise. A versão 2.1.330 do Claude Code ampliou de 7 para 30 dias a duração das tarefas recorrentes. E o linked billing, em beta desde 17 de novembro, muda quem paga quando outra plataforma usa o Claude em seu nome. Nesta edição: o que cada fonte diz, o que ficou sem resposta, um radar com quatro itens e um exercício de 30 minutos para desenhar uma rotina automática antes de agendá-la. Vagas: a coleta automática não conseguiu acessar Gupy, Vagas.com e LinkedIn nesta semana, então não há vagas nesta edição.",
+ "news": [
+  {
+   "h": "30 de novembro: plugins podem parar de funcionar se Skills estiver desligado 🗓️",
+   "date": "Página de ajuda consultada em 22 de novembro de 2026 (a página não mostra data de publicação)",
+   "src": "Claude (Anthropic), central de ajuda",
+   "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page",
+   "p": [
+    "A central de ajuda da Anthropic descreve uma página única para gerenciar plugins, skills e conectores. Segundo o texto, o lançamento nos planos Free, Pro, Max, Ultra e Team começou de forma gradual em **29 de outubro** e fica geralmente disponível em **9 de novembro**. No plano Enterprise, o recurso fica ativo por padrão a partir de **30 de novembro**.",
+    "**O que a página diz sobre a regra:** a partir de 30 de novembro, se Skills estiver desativado na organização, os plugins também são bloqueados no Claude Desktop, nos planos Team e Enterprise. Para manter os plugins, um owner precisa, antes da data, ligar a opção \"Cloud code execution and file creation\" em Organization settings > Library > Policy e ativar Skills, que passa a se chamar Plugins em 30 de novembro. Se Skills já está ativado, nenhuma ação é necessária. Usuários comuns não precisam fazer nada, e o que já está instalado continua disponível.",
+    "**O que ficou sem resposta:** a página não informa quantas organizações têm Skills desligado hoje nem o que acontece com fluxos que dependem de plugins depois da data.",
+    "**Leitura crítica (conteúdo do fornecedor):** é documentação de produto, com a regra escrita do ponto de vista do fornecedor. Confira a configuração da sua organização na própria página antes de agir.",
+    "**Leitura nossa (não é afirmação da Anthropic):** é um exemplo pequeno de risco de processo: uma extensão em uso depende de uma configuração que ninguém lembra de ter feito. Vale registrar quem é o responsável por cada configuração que sustenta um fluxo."
+   ],
+   "tag": "AUTOMAÇÃO",
+   "tldr": "Em 30/11, com Skills desligado, plugins deixam de funcionar no Claude Desktop em Team e Enterprise; o owner precisa ligar a opção antes.",
+   "curto": "prazo de admin: Skills ligado ou plugins bloqueados",
+   "capa": "30/11: a configuração que pode parar seus plugins"
+  },
+  {
+   "h": "Tarefas recorrentes do Claude Code agora duram até 30 dias ⏱️",
+   "date": "20 de novembro de 2026 (a página mostra dia e mês, sem o ano)",
+   "src": "GitHub (anthropics/claude-code), release v2.1.330",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "p": [
+    "A versão 2.1.330 do Claude Code, publicada em 20 de novembro, mudou a duração das tarefas recorrentes agendadas e do comando `/loop`: passam a rodar por até **30 dias, em vez de 7**, enquanto a sessão continuar ativa, e avisam quando terminam. Segundo a nota, **tarefas criadas antes dessa versão ainda terminam em 7 dias**.",
+    "**O que mais a nota traz:** login em organizações gerenciadas pelo Admin Console do Enterprise, e um mod integrado chamado Easel, que gera gráficos sob pedido e em resultados de métricas via MCP, em macOS e Linux, com opção de desligar em `/config`. A lista de correções é longa e técnica.",
+    "**O que ficou sem resposta:** a nota não diz se a rotina continua depois de a sessão encerrar, nem informa casos de uso em empresas. A condição \"enquanto a sessão continuar ativa\" é parte da regra.",
+    "**Leitura crítica (conteúdo do fornecedor):** é nota de versão para quem usa a ferramenta de linha de comando. Mostra o que mudou, não o resultado em operação.",
+    "**Leitura nossa (não é afirmação da Anthropic):** uma rotina que expira sozinha é um bom lembrete de processo: toda checagem automática precisa de dono, de critério de aviso e de data de revisão. Sem isso, ela para em silêncio ou vira ruído."
+   ],
+   "tag": "AUTOMAÇÃO",
+   "tldr": "Claude Code v2.1.330: tarefas recorrentes e /loop rodam até 30 dias (antes 7), enquanto a sessão ficar ativa; as antigas ainda terminam em 7.",
+   "curto": "rotinas agendadas: de 7 para 30 dias",
+   "capa": "Sua rotina automática agora expira em 30 dias"
+  },
+  {
+   "h": "Linked billing: outra plataforma usa o Claude e a cobrança cai na sua organização 💳",
+   "date": "17 de novembro de 2026",
+   "src": "Claude (Anthropic)",
+   "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+   "p": [
+    "Em 17 de novembro, a Anthropic anunciou, em beta, o linked billing na Claude Platform. Segundo o texto, plataformas de terceiros, como ferramentas de programação e de automação de fluxos, podem cobrar o uso da API do Claude diretamente da organização do cliente, **sem troca de chave de API**. O vínculo é aprovado por um usuário do Console com papel de Owner, Admin ou Billing.",
+    "**O que o texto diz sobre controle:** o cliente aprova cada plataforma, define um limite de gasto mensal (ou usa um padrão) e pode desvincular a qualquer momento. A plataforma vê o uso por cliente vinculado (requisições, tokens e modelos). O texto avisa que as requisições rodam na organização da plataforma, então configurações do cliente, como lista de IPs permitidos, chaves de criptografia e retenção de dados, não se aplicam.",
+    "**O que ficou sem resposta:** o texto não traz preço, data de disponibilidade geral nem número de clientes usando.",
+    "**Leitura crítica (conteúdo do fornecedor):** o anúncio destaca a facilidade de vincular. A limitação sobre configurações do cliente aparece no texto, mas pesa na decisão de quem tem regras de segurança e retenção.",
+    "**Leitura nossa (não é afirmação da Anthropic):** antes de aprovar um vínculo, vale perguntar quem é o dono do gasto, qual é o limite e se os dados passam por regras diferentes das da sua organização. É decisão de alçada, não só de TI."
+   ],
+   "tag": "IA E PROCESSOS",
+   "tldr": "Beta de cobrança vinculada: plataformas de terceiros cobram o uso do Claude da organização do cliente, sem chave de API, com limite mensal e aprovação por Owner, Admin ou Billing.",
+   "curto": "cobrança vinculada: limite, aprovação e ressalva de dados",
+   "capa": "Quem paga a IA que outra ferramenta usa por você?"
+  }
+ ],
+ "radar": [
+  [
+   "Texto gerado por IA",
+   "em 16 de novembro, as notas da API registram que o texto gerado por Opus 4.6, Opus 4.5, Sonnet 4.5 e Haiku 4.5 passa a carregar a marca d'água de texto da Anthropic em plataformas suportadas. Se a requisição definir temperature, top_p ou top_k fora do padrão, o texto pode não carregá-la.",
+   "https://platform.claude.com/docs/en/release-notes/api"
+  ],
+  [
+   "Rotinas e tarefas",
+   "a versão 2.1.329 do Claude Code (19 de novembro) incluiu no /tasks as tarefas agendadas da sessão, os despertares do /loop e as bifurcações da conversa, com opção de parar cada um. Também avisa, na confiança de uma pasta, onde estão declarados os hooks.",
+   "https://github.com/anthropics/claude-code/releases/tag/v2.1.329"
+  ],
+  [
+   "Documentos e planilhas",
+   "o repositório anthropics/skills mesclou em 16 de novembro uma atualização das skills de docx, pptx e xlsx: empacotamento via zipfile e zip, aviso quando o arquivo original não pode ser lido e remoção de links externos antes de converter para PDF ou imagem.",
+   "https://github.com/anthropics/skills/pull/2221"
+  ],
+  [
+   "Excelência operacional",
+   "a pesquisa interna registra que o 2º Fórum de Excelência em Produtividade (Poli-USP, Fundação Vanzolini e Kaizen Institute Brasil) reuniu, em 18 de novembro, Claro, Vibra Energia, Vale e Consag para tratar de IA em operações. Link não aberto; fato conforme pesquisa interna.",
+   "https://pro.poli.usp.br/2o-forum-de-excelencia-em-produtividade-debate-impacto-da-inteligencia-artificial-nas-operacoes-empresariais/"
+  ]
+ ],
+ "aplique": {
+  "title": "Desenhe a rotina automática antes de agendá-la",
+  "problema": "uma checagem que alguém faz toda semana (planilha, chamados parados, prazos) e que vai ser automatizada sem que fique definido quem age no aviso, o que dispara e quando ela é revisada.",
+  "passos": [
+    "Escolha UMA checagem recorrente e escreva em uma frase o que ela confere, com que frequência e em que fonte (por exemplo: toda segunda, chamados sem resposta há mais de 3 dias na planilha da fila).",
+    "Defina o gatilho de aviso e o dono: qual resultado dispara um aviso, para quem ele vai e o que essa pessoa faz em até um dia útil. Registre também o que acontece quando não há nada a avisar.",
+    "Defina a data de revisão: marque no calendário um ponto antes de a rotina expirar ou perder utilidade (se ela depende de uma ferramenta com prazo, como as de 30 dias, use um prazo menor) e quem decide renovar, ajustar ou encerrar."
+  ],
+  "ferramenta": "um documento de uma página com os campos: Checagem / Frequência / Fonte / Gatilho / Dono do aviso / Ação esperada / Data de revisão.",
+  "duracao": "30 minutos para uma rotina, com quem hoje faz a checagem à mão.",
+  "resultado": "uma ficha de uma página que qualquer pessoa consegue executar ou automatizar, com dono e prazo de revisão definidos."
+ },
+ "pausa": {
+  "cenario": "você configurou uma checagem automática semanal de chamados parados. Depois de algumas semanas, o aviso chega toda segunda, mas ninguém responde mais e a lista cresce.",
+  "pergunta": "o que você faz primeiro?",
+  "opts": [
+   [
+    "A",
+    "Aumentar a frequência do aviso para duas vezes por semana.",
+    "Mais avisos"
+   ],
+   [
+    "B",
+    "Rever o dono do aviso, o gatilho e a ação esperada, e só então decidir o que automatizar.",
+    "Rever dono e gatilho"
+   ],
+   [
+    "C",
+    "Desligar a rotina, porque ninguém olha.",
+    "Desligar"
+   ]
+  ],
+  "palpite": "B. Aviso sem dono e sem ação vira ruído. A aumenta o ruído e C joga fora uma checagem que talvez valha, só mal desenhada."
+ },
+ "ferramenta": {
+  "nome": "bpmn-js (kit de BPMN da bpmn.io)",
+  "url": "https://github.com/bpmn-io/bpmn-js",
+  "oque": "kit de código aberto para visualizar e editar diagramas BPMN 2.0 no navegador. A página cita uma demonstração em demo.bpmn.io e uma licença própria da bpmn.io, que deve ser lida antes de uso comercial.",
+  "problema": "processos descritos só em texto ou em fluxogramas soltos, sem notação padrão para discutir com a equipe.",
+  "uso": "abrir o editor de demonstração, desenhar o fluxo da ficha do exercício (início, tarefas, decisão do gatilho, fim) e exportar o XML para guardar a versão.",
+  "limitacao": "o foco do projeto é modelar e visualizar, não executar o processo. A licença não foi lida em detalhe e o link não pôde ser conferido com curl nesta rotina.",
+  "exemplo": "uma analista desenha a rotina de chamados parados com um desvio para o dono do aviso e leva o diagrama para validar com a equipe."
+ },
+ "salvar": [
+  [
+   "Ferramenta",
+   "bpmn-js (bpmn.io)",
+   "https://github.com/bpmn-io/bpmn-js",
+   "para desenhar a rotina do exercício em BPMN 2.0 direto no navegador."
+  ],
+  [
+   "Documentação",
+   "Gerenciar plugins, skills e conectores (Claude)",
+   "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page",
+   "para conferir os passos de owner antes de 30 de novembro."
+  ],
+  [
+   "Anúncio",
+   "Linked billing na Claude Platform",
+   "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+   "para ver como funcionam limite de gasto, aprovação e a ressalva sobre configurações do cliente."
+  ]
+ ],
+ "pergunta": "Qual checagem recorrente na sua área hoje só funciona porque uma pessoa lembra de fazer? E quem seria o dono do aviso se ela fosse automatizada?",
+ "fechamento": "Se algo aqui foi útil, responda com sua opinião ou encaminhe para alguém que está pensando em automatizar uma rotina agora. E se tem um tema, ferramenta ou tipo de vaga que você quer ver por aqui, é só contar.",
+ "pend": [
+  "Notícias vêm da pesquisa diária do projeto (Invicta-OS, 16/11 a 22/11). Abertos nesta rotina e conferidos: página de ajuda de plugins, release v2.1.330 e v2.1.329 do Claude Code, linked billing, notas da API (16/11) e PR #2221 de anthropics/skills.",
+  "Página de plugins: não mostra data de publicação; datas de rollout (29/10, 9/11, 30/11) conforme o texto aberto. A pesquisa interna dizia 'GA desde 9/11'; a fonte diz 'geralmente disponível em 9 de novembro'.",
+  "Releases v2.1.330 e v2.1.329: a página mostra só dia e mês; o ano de 2026 vem da pesquisa interna. A tradução da frase da v2.1.329 segue o texto aberto (a pesquisa interna descrevia 'rotinas, lembretes e conversas paralelas'; a fonte diz tarefas agendadas, despertares do /loop, objetivo e bifurcações).",
+  "Radar 'Excelência operacional' (Fórum Poli-USP): link não aberto (domínio fora da rede desta sessão; pro.poli.usp.br e spdiario.com.br precisam ser liberados); fato conforme pesquisa interna.",
+  "Ferramenta bpmn-js: conteúdo aberto por WebFetch; curl direto retorna 403 (proxy) para github.com e 000 para bpmn.io, então o status 200 não foi conferido por curl. Licença bpmn.io não lida em detalhe.",
+  "Vagas: a coleta falhou (Gupy, Vagas.com e LinkedIn bloqueados pela rede desta sessão, 0 vagas). vagas.json vazio; edição sem seção de vagas. Se o GitHub Actions coletar vagas até terça, regerar a edição.",
+  "Eventos futuros de BPM/Lean: a pesquisa interna da semana não trouxe pauta datada de BPM ou Lean com inscrição aberta, e não foi feita busca externa; o radar não traz evento. Todas as 'leituras nossas' são interpretação editorial. Não existe link público de inscrição."
+ ]
+}
